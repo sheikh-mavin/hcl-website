@@ -4,6 +4,15 @@
 img {
   vertical-align: middle;
 }
+.nav-bar-hcl a {
+  font-size: 13px;
+}
+
+.hcl {
+  font-family: 900;
+  font-size: 20px;
+  font-style: italic;
+}
 /* Slideshow container */
 .sl-container {
   max-width: 100%;
@@ -61,7 +70,7 @@ img {
   padding: 8%;
 }
 
-.overview > .container-fluid {
+.overview > .overview-wrapper {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   padding: 40px;
@@ -75,6 +84,7 @@ img {
 }
 .overview-image {
   width: 35%;
+  border-radius: 10px;
   height: 600px;
   position: absolute;
   margin-top: -80px;
@@ -90,26 +100,28 @@ img {
 .overview-text {
   font-size: 23px;
 }
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
 
 /* Featurs */
 
-.feature{
-  background-image:url(./assets/f.jpg);
+.feature {
+  background-image: url(./assets/f.jpg);
   background-size: 100% 100%;
   height: 1000px;
 }
-
-
-
-
-
 
 /* Quotes */
 
 .quotes {
   height: auto;
   background-color: rgb(237, 240, 241);
-  padding:100px 150px;
+  padding: 100px 150px;
 }
 
 .section-heading {
@@ -125,13 +137,12 @@ img {
 }
 .q-card {
   border: 1px solid black;
-  width:33%;
+  width: 33%;
   margin: 30px;
   height: 460px;
 }
-.q-card-zoom{
+.q-card-zoom {
   z-index: 1000;
-
 }
 .quotation {
   height: 100px;
@@ -139,8 +150,8 @@ img {
 }
 
 .quotation-open {
-  background: transparent url("./assets/c512353b8df241e1331eec0a1c014a07.svg") 0% 0%
-    no-repeat padding-box;
+  background: transparent url("./assets/c512353b8df241e1331eec0a1c014a07.svg")
+    0% 0% no-repeat padding-box;
   background-size: 200px 100px;
   transform: rotate(180deg);
   left: 0;
@@ -148,8 +159,8 @@ img {
   position: absolute;
 }
 .quotation-close {
-  background: transparent url("./assets/c512353b8df241e1331eec0a1c014a07.svg") 0% 0%
-    no-repeat padding-box;
+  background: transparent url("./assets/c512353b8df241e1331eec0a1c014a07.svg")
+    0% 0% no-repeat padding-box;
   background-size: 200px 100px;
   right: 0;
   bottom: 0;
@@ -165,13 +176,11 @@ img {
   background-color: transparent;
   color: rgb(13, 73, 129);
 }
-.circle-left{
+.circle-left {
   right: 100px;
-
 }
-.circle-right{
+.circle-right {
   left: 100px;
-  
 }
 .arrow {
   margin: 0;
@@ -186,7 +195,7 @@ img {
 .contact {
   height: auto;
   background-color: rgb(255, 255, 255);
-  padding:100px 150px;
+  padding: 100px 150px;
 }
 
 form {
@@ -204,7 +213,7 @@ input {
   border-radius: 4px;
   font-size: 16px;
   transition: all 0.2s ease-out;
-  font-family: 'MetropolisRegular';
+  font-family: "MetropolisRegular";
   width: 100%;
   height: 60px;
   padding-left: 30px;
@@ -220,20 +229,17 @@ input:focus {
   box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
 }
 
-
-
 input::placeholder {
   color: #000000a6;
-  font-family:  sans-serif;
-  font-size:large
+  font-family: sans-serif;
+  font-size: large;
 }
 
-.required{
+.required {
   color: red;
-  
 }
 
-input[type = "checkbox"] {
+input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -254,8 +260,6 @@ input[type = "checkbox"] {
   -ms-user-select: none;
   user-select: none;
   font-family: sans-serif;
-  
-
 }
 .checkmark {
   position: absolute;
@@ -268,14 +272,13 @@ input[type = "checkbox"] {
   border: 1px solid grey;
 
   /* Style the checkmark/indicator */
-
 }
-.form-info{
-  color: rgb(0, 0, 0,.5);
+.form-info {
+  color: rgb(0, 0, 0, 0.5);
   font-size: 20px !important;
   font-family: sans-serif;
 }
-.indicator{
+.indicator {
   left: 10px;
   top: 5px;
   width: 5px;
@@ -295,8 +298,8 @@ input[type = "checkbox"] {
   background-color: rgb(0, 0, 0);
 }
 
-.frm-button{
-  background-color: rgb(5, 113, 175);
+.frm-button {
+  background-color: rgb(37 108 182);
   width: 250px;
   height: 50px;
   border-radius: 60px;
@@ -308,27 +311,28 @@ input[type = "checkbox"] {
   letter-spacing: 0px;
   font-size: 20px;
   font-weight: bold;
-  font-family: sans-serif;   
-  cursor: pointer; 
+  font-family: sans-serif;
+  cursor: pointer;
 }
 
-.footer1{
+.footer1 {
   height: auto;
-  background-color: #e5e5e5ed;
+  background-color: rgb(231 233 241);
   padding: 20px 150px;
   font-size: 17px;
-  color: rgb(0, 0, 0,.5);
+  color: rgb(0, 0, 0, 0.5);
 }
 
-.footer2{
+.footer2 {
   height: auto;
-  background-color: #111111ed;
-  padding: 20px 150px;
+  background-color: rgb(26 26 26);
+  padding: 15px 150px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.904);
 }
 
-.social-logo{
+.social-logo {
+  display: inline-block;
   border: 2px solid rgb(206, 206, 206);
   height: 40px;
   border-radius: 50%;
@@ -338,8 +342,9 @@ input[type = "checkbox"] {
   text-align: center;
 }
 
-.bor{
-  border-right: 2px solid  #494949ed;
+.bor {
+  text-align: center;
+  border-right: 2px solid #494949ed;
 }
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -348,23 +353,59 @@ input[type = "checkbox"] {
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   .overview-image {
     width: 100%;
-    height: 600px;
+    height: 300px;
     position: relative;
-    margin-top: 80px;
+    margin-top: 0px;
+  }
+  .overview {
+    padding: 20px;
+  }
+  .overview > .overview-wrapper {
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+  }
+  .overview-text-wrapper {
+    padding: 10px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-meta .navbar-nav .nav-link {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
-  .navbar {
+  .navbar-meta {
     padding: 0px 150px;
   }
 }
 
-
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding: 10px;
+  }
+  .quotes {
+    padding: 10px;
+  }
+  /* .overview {
+    padding: 10px;
+  }
+  .overview > .overview-wrapper {
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+  }
+  .overview-text-wrapper {
+    padding: 10px;
+  } */
+  /* .overview-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 0px;
+  } */
+  /* .logo-img{
+    height: 50;
+  } */
+}
