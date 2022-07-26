@@ -1,0 +1,370 @@
+.sl {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+/* Slideshow container */
+.sl-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.scroller {
+  position: absolute;
+  bottom: 20%;
+  margin-left: 100px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  border: 3px solid #bbb;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.text {
+  position: absolute;
+  bottom: 10%;
+  margin-left: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.sl-active {
+  background-color: #ffffff;
+  border: 6px solid transparent;
+  width: 30px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+/* Fading animation */
+.sl-fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.overview {
+  padding: 8%;
+}
+
+.overview > .container-fluid {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.overview-heading {
+  font-size: 50px;
+  font-weight: 930;
+  font-family: sans-serif;
+}
+.overview-image {
+  width: 35%;
+  height: 600px;
+  position: absolute;
+  margin-top: -80px;
+}
+.mega {
+  color: rgb(96 147 61);
+}
+
+.talks {
+  color: rgb(66, 104, 207);
+}
+
+.overview-text {
+  font-size: 23px;
+}
+
+/* Featurs */
+
+.feature{
+  background-image:url(./assets/f.jpg);
+  background-size: 100% 100%;
+  height: 1000px;
+}
+
+
+
+
+
+
+/* Quotes */
+
+.quotes {
+  height: auto;
+  background-color: rgb(237, 240, 241);
+  padding:100px 150px;
+}
+
+.section-heading {
+  color: rgb(0, 0, 0, 0.9);
+  font-size: 50px;
+  font-weight: 930;
+  padding-left: 10%;
+  font-family: sans-serif;
+}
+.q-slider {
+  position: relative;
+  height: 530px;
+}
+.q-card {
+  border: 1px solid black;
+  width:33%;
+  margin: 30px;
+  height: 460px;
+}
+.q-card-zoom{
+  z-index: 1000;
+
+}
+.quotation {
+  height: 100px;
+  width: 200px;
+}
+
+.quotation-open {
+  background: transparent url("./assets/c512353b8df241e1331eec0a1c014a07.svg") 0% 0%
+    no-repeat padding-box;
+  background-size: 200px 100px;
+  transform: rotate(180deg);
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.quotation-close {
+  background: transparent url("./assets/c512353b8df241e1331eec0a1c014a07.svg") 0% 0%
+    no-repeat padding-box;
+  background-size: 200px 100px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.circle {
+  top: 50%;
+  position: absolute;
+  border: 2px solid rgb(13, 73, 129);
+  height: 50px;
+  border-radius: 50%;
+  width: 50px;
+  background-color: transparent;
+  color: rgb(13, 73, 129);
+}
+.circle-left{
+  right: 100px;
+
+}
+.circle-right{
+  left: 100px;
+  
+}
+.arrow {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 500px;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+}
+
+.contact {
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  padding:100px 150px;
+}
+
+form {
+  background: #fff;
+  width: 100%;
+  font-family: "MetropolisRegular";
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d6d8e6;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0.2s ease-out;
+  font-family: 'MetropolisRegular';
+  width: 100%;
+  height: 60px;
+  padding-left: 30px;
+  margin-bottom: 20px !important;
+}
+
+/* .form-row{
+  margin-bottom: 40px;
+} */
+
+input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+
+
+input::placeholder {
+  color: #000000a6;
+  font-family:  sans-serif;
+  font-size:large
+}
+
+.required{
+  color: red;
+  
+}
+
+input[type = "checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkBoxContainer {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px !important;
+  color: grey !important;
+  line-height: 27px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: sans-serif;
+  
+
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2.5ex;
+  width: 2.5ex;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid grey;
+
+  /* Style the checkmark/indicator */
+
+}
+.form-info{
+  color: rgb(0, 0, 0,.5);
+  font-size: 20px !important;
+  font-family: sans-serif;
+}
+.indicator{
+  left: 10px;
+  top: 5px;
+  width: 5px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+  display: none;
+  position: absolute;
+}
+/* Show the checkmark when checked */
+.checkBoxContainer input:checked ~ .checkmark .indicator {
+  display: block;
+}
+
+.checkBoxContainer input:checked ~ .checkmark {
+  background-color: rgb(0, 0, 0);
+}
+
+.frm-button{
+  background-color: rgb(5, 113, 175);
+  width: 250px;
+  height: 50px;
+  border-radius: 60px;
+  opacity: 1;
+  margin-right: 30px;
+  color: white;
+  border: none;
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;   
+  cursor: pointer; 
+}
+
+.footer1{
+  height: auto;
+  background-color: #e5e5e5ed;
+  padding: 20px 150px;
+  font-size: 17px;
+  color: rgb(0, 0, 0,.5);
+}
+
+.footer2{
+  height: auto;
+  background-color: #111111ed;
+  padding: 20px 150px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+.social-logo{
+  border: 2px solid rgb(206, 206, 206);
+  height: 40px;
+  border-radius: 50%;
+  width: 40px;
+  background-color: transparent;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.bor{
+  border-right: 2px solid  #494949ed;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .overview-image {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .navbar {
+    padding: 0px 150px;
+  }
+}
+
+
