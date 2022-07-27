@@ -90,11 +90,11 @@ img {
   margin-top: -80px;
 }
 .mega {
-  color: rgb(96 147 61);
+  color: #9bbc30;
 }
 
 .talks {
-  color: rgb(66, 104, 207);
+  color: #256cb6;
 }
 
 .overview-text {
@@ -353,6 +353,12 @@ input[type="checkbox"] {
   }
 }
 
+@media only screen and (max-width: 409px) {
+  .navbar-brand {
+    margin-right: 5px!important;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .overview-image {
     width: 100%;
@@ -369,6 +375,11 @@ input[type="checkbox"] {
   }
   .overview-text-wrapper {
     padding: 10px;
+  }
+  .overview-heading {
+    font-size: 40px;
+    font-weight: 930;
+    font-family: sans-serif;
   }
 }
 
