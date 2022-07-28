@@ -513,7 +513,7 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 768px) {
   .contact {
-    padding: 10px;
+    padding: 40px 0px 0px 0px;
   }
   .quotes {
     padding:40px 0px 0px 0px;
