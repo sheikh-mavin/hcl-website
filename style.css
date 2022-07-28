@@ -139,7 +139,7 @@ img {
 /* Quotes */
 
 .quotes {
-  background-image: url(./assets/qoutes-background.png);
+  background-image: url(./assets/images/quotes/qoutes-background.png);
   background-size: 100% 100%;
   height: auto;
   padding: 67px 0px 67px 0px;
@@ -180,7 +180,7 @@ img {
 }
 .left-arrow {
   display: inline-block;
-  background-image: url("./assets/left-arrow.svg");
+  background-image: url("./assets/images/quotes/left-arrow.svg");
   background-repeat: no-repeat;
   background-size: auto;
   height: 46px;
@@ -196,7 +196,7 @@ img {
 
 .right-arrow {
   display: inline-block;
-  background-image: url("./assets/right-arrow.svg");
+  background-image: url("./assets/images/quotes/right-arrow.svg");
   background-repeat: no-repeat;
   background-size: auto;
   height: 46px;
