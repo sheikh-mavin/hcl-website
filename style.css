@@ -335,9 +335,9 @@ input {
   transition: all 0.2s ease-out;
   font-family: "Gotham";
   width: 100%;
-  height: 60px;
+  height: 50px;
   padding-left: 30px;
-  margin-bottom: 20px !important;
+  margin-bottom: 29px !important;
 }
 
 input:focus {
