@@ -512,15 +512,15 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 768px) {
-  .contact {
-    padding: 40px 0px 0px 0px;
-  }
   .quotes {
-    padding:40px 0px 40px 0px;
+    padding:40px 0px 0px 0px;
   }
   .quotes-section-heading {
     margin-left: 0px;
     font-size: 40px;
+  }
+  .contact {
+    padding: 40px 0px 40px 0px;
   }
   .contact-section-heading {
     margin-left: 0px;
