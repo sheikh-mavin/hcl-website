@@ -8,7 +8,6 @@
   src: url("./assets/fonts/GothamBold.ttf");
 }
 
-
 @font-face {
   font-family: "Rubik";
   src: url("./assets/fonts/Rubik-Regular.ttf");
@@ -17,6 +16,13 @@
 @font-face {
   font-family: "OpenSans";
   src: url("./assets/fonts/Rubik-Regular.ttf");
+}
+
+.banner-1 {
+  content: url("./assets/images/banner/banner-1.png");
+}
+.banner-2 {
+  content: url("./assets/images/banner/banner-2.png");
 }
 
 .sl {
@@ -126,9 +132,7 @@ img {
 }
 .slide {
   display: none;
- 
 }
-
 
 .slide.active {
   display: block;
@@ -140,34 +144,37 @@ img {
 
 @keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
+@-moz-keyframes fadein {
+  /* Firefox */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* Opera */
+@-o-keyframes fadein {
+  /* Opera */
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -182,10 +189,11 @@ img {
 /* Quotes */
 
 .quotes {
-  background-image: url(./assets/images/quotes/qoutes-background.png);
+  background-image: url(./assets/images/quotes/quotes-bg.png);
   background-size: 100% 100%;
   height: auto;
   padding: 67px 0px 67px 0px;
+  position: relative;
 }
 
 .quotes-section-heading {
@@ -200,6 +208,12 @@ img {
   letter-spacing: normal;
   color: #242833;
 }
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 
 .left-arrow {
   display: inline-block;
@@ -210,11 +224,30 @@ img {
   width: 46px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.q-l {
+  display: inline-block;
+  background-image: url("./assets/images/quotes/q-l.png");
+  background-repeat: no-repeat;
+  background-size: 150px 100px;
+  left: 12%;
+  top: 150px;
+  width: 161px;
+  height: 380px;
+  opacity: 1;
+  position: absolute;
+}
+
+.q-r {
+  display: inline-block;
+  background-image: url("./assets/images/quotes/q-r.png");
+  background-repeat: no-repeat;
+  background-size: 150px 100px;
+  right: 12%;
+  bottom: -180px;
+  width: 161px;
+  height: 380px;
+  opacity: 1;
+  position: absolute;
 }
 
 .right-arrow {
@@ -312,7 +345,7 @@ img {
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 #customers-testimonials.owl-carousel .owl-dots .owl-dot {
   display: inline-block;
@@ -335,7 +368,6 @@ img {
   border-radius: 50px;
 }
 
-
 /* contact */
 .contact {
   height: auto;
@@ -344,7 +376,6 @@ img {
 }
 
 .contact-section-heading {
-  height: 50px;
   margin-left: 130px;
 
   font-family: Gotham-Bold;
@@ -361,8 +392,7 @@ form {
   background: #fff;
   width: 100%;
   font-family: "Gotham";
-  margin-top: 20px;
-  padding-top: 10px;
+  margin-top: 34px;
 }
 
 input {
@@ -408,7 +438,7 @@ input[type="checkbox"] {
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 14px !important;
-  color: grey !important;
+  color: #242833 !important;
   line-height: 27px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -429,7 +459,7 @@ input[type="checkbox"] {
   /* Style the checkmark/indicator */
 }
 .form-info {
-  color: rgb(0, 0, 0, 0.5);
+  color: #242833 !important;
   font-size: 14px !important;
   font-family: Gotham;
 }
@@ -514,31 +544,6 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 992px) {
-  .overview-image {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-  .overview {
-    padding: 20px;
-  }
-  .overview > .overview-wrapper {
-    padding: 0px 0px 10px 0px;
-    border-radius: 20px;
-  }
-  .overview-text-wrapper {
-    padding: 10px;
-  }
-  .overview-heading {
-    font-size: 40px;
-    font-weight: 930;
-    font-family: Gotham;
-  }
-}
-
 @media screen and (min-width: 992px) {
   .navbar-meta .navbar-nav .nav-link {
     padding-right: 1rem !important;
@@ -547,26 +552,7 @@ input[type="checkbox"] {
   .navbar-meta {
     padding: 0px 150px;
   }
-  
 }
-
-@media only screen and (max-width: 768px) {
-  .quotes {
-    padding:40px 0px 0px 0px;
-  }
-  .quotes-section-heading {
-    margin-left: 0px;
-    font-size: 40px;
-  }
-  .contact {
-    padding: 40px 0px 40px 0px;
-  }
-  .contact-section-heading {
-    margin-left: 0px;
-  }
-  
-}
-
 
 @media only screen and (max-width: 1000px) {
   .quote-wrapper {
@@ -576,9 +562,11 @@ input[type="checkbox"] {
   }
   .right-arrow {
     visibility: hidden;
+    display: none;
   }
   .left-arrow {
     visibility: hidden;
+    display: none;
   }
   .owl-item.active.center {
     left: 0px;
@@ -587,13 +575,74 @@ input[type="checkbox"] {
     width: 100%;
     height: auto;
   }
-  .sl-image{
+  .sl-image {
     height: 400px;
   }
+
+  .banner-1 {
+    content: url("./assets/images/banner/banner-2-small.png");
+  }
+  .banner-2 {
+    content: url("./assets/images/banner/banner-2-small.png");
+  }
+  .scroller {
+    margin-left: 16px;
+    margin-bottom: -32px;
+  }
+  .overview-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .overview {
+    padding: 22px 16px;
+  }
+  .overview > .overview-wrapper {
+    padding: 0px 0px 10px 0px;
+    border-radius: 20px;
+  }
+  .overview-text-wrapper {
+    padding: 10px 16px;
+  }
+  .overview-heading {
+    font-size: 24px;
+    font-family: Gotham-Bold;
+  }
+  .quotes {
+    padding: 27px 16px 47px 16px;
+  }
+  .quotes-section-heading {
+    margin-left: 0px;
+    font-size: 24px;
+  }
+  .contact {
+    padding: 27px 16px 47px 16px;
+  }
+  .contact-section-heading {
+    margin-left: 0px;
+    font-size: 24px;
+  }
+  #customers-testimonials.owl-carousel .owl-dots {
+    margin-top: 16px;
+  }
+  .q-l {
+    background-size: 70px 50px;
+    left: 2px;
+    top: 55px;
+    width: 70px;
+    height: 50px;
+  }
+  
+  .q-r {
+    background-size: 70px 50px;
+    right: 2px;
+    bottom: 55px;
+    width: 70px;
+    height: 50px;
+  }
 }
-
-
-
 
 /* .item{
   width: 500px;
