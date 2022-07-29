@@ -2,6 +2,15 @@
     font-family: "Gotham";
     src: url("./assets/fonts/GothamBook.ttf");
   }
+
+  @font-face {
+    font-family: "Gotham-Bold";
+    src: url("./assets/fonts/GothamBold.ttf");
+  }
+  @font-face {
+    font-family: "Gotham-Medium";
+    src: url("./assets/fonts/GothamMedium.ttf");
+  }
   
   @font-face {
     font-family: "Rubik";
@@ -16,6 +25,11 @@
     font-family: "Poppins";
     src: url("./assets/fonts/Poppins-Bold.ttf");
   } 
+
+  @font-face {
+    font-family: "Rubik-SemiBold";
+    src: url("./assets/fonts/rubik-semi-bold.ttf");
+  }
 
   
 /* Featurs */
@@ -35,16 +49,32 @@
     padding:0 5px 0 8% !important;
   }
   .feature .card{
-    height: 60vh ;
+    height: 59vh ; 
+    width: 90%;
+  }
+
+  .feature .card-body{
+    padding: 15px !important;
   }
   
   .feature .card:hover{
+    /* transform: scale(1.08); */
     height: 62vh;
+    top: -10px;
+    margin-top: 0px;
   }
   .feature .card:hover .overlay{
     opacity: 1;
     background-color: rgb(0, 0, 0, 0.8)
   }
+
+   
+  .feature .card:hover img{
+    height: 100%;
+  }
+  /* .feature .card:hover .card-img-top-featured-speaker{
+    height: 50vh !important;
+  } */
   
   .overlay {
     position: absolute;
@@ -52,7 +82,7 @@
     bottom: 0;
     left: 0;
     right: 0; 
-    height: 45vh;
+    height: 46vh;
     width: 100%;
     opacity: 0;
     transition: .1s ease; 
@@ -60,7 +90,7 @@
   }
   
   .overlay .overlay-description{
-    font-family: "Gotham";
+    font-family: "Gotham-Medium";
     font-size: 16px;
     font-weight: 500;
     font-stretch: normal;
@@ -69,7 +99,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #fff;
-    padding: 20px; 
+    padding: 50px 20px 0px 20px;  
   }
   
   .overlay-icons{
@@ -78,7 +108,7 @@
   
   
   .card-img-top-featured-speaker{
-    height: 45vh;
+    height: 43vh;
   }
   
   .feature .host-speaker{
@@ -92,7 +122,7 @@
   }
   
   .feature .speaker-type{
-    font-family: "Gotham";
+    font-family: "Rubik";
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -103,7 +133,7 @@
   }
   
   .feature .speaker-name{
-    font-family: "Gotham";
+    font-family: "Rubik-SemiBold";
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -135,8 +165,15 @@
       border-radius: 20px;
       background-color: #dee5c7;
       border: 0px;
-      margin: 5px 0px 34px 10px;
+      margin: 5px;
       padding:5px 15px;
+  }
+
+  .feature-control-icons{
+    border: 0px;
+          background: transparent;
+          padding: 0px;
+
   }
   .carousel-control-prev-icon {
     background-image: url(./assets/images/feature/left-arrow.png) !important;
@@ -189,7 +226,7 @@
   }
   .episodes .title{
     padding-top: 10vh;
-    font-family: "Gotham";
+    font-family: "Gotham-Bold";
     font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
@@ -200,9 +237,17 @@
     margin-bottom: 0px;
       padding-bottom: 30px;
   }
+  .multi-card{
+    opacity: 0.3;
+    border: 0px !important;
+    cursor: pointer;
+  }
+  .episodes .multi-card.active{
+    opacity: 1;
+  }
   
   .single-episode-details{
-    font-family: "Gotham";
+    font-family: "Gotham-Medium";
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -212,7 +257,7 @@
     color: #687d20;
   }
   .single-episode-title{
-    font-family: "Gotham";
+    font-family: "Gotham-Bold";
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -222,8 +267,8 @@
     color: #242833;
     padding-top: 8px;
   }
-  .single-episode-download{
-    font-family: "Gotham";
+  .single-episode-audio,.single-episode-pdf{
+    font-family: "Gotham-Bold";
     font-size: 14px;
     font-weight: bold;
     font-stretch: normal;
@@ -232,8 +277,19 @@
     letter-spacing: normal;
     color: #000;
   }
+  .single-episode-audio a,.single-episode-pdf a{
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    text-decoration: none;
+  }
   .multi-episode-details{
-    font-family: "Gotham";
+    font-family: "Gotham-Medium";
     font-size: 14px;
     font-weight: 500;
     font-stretch: normal;
@@ -243,7 +299,7 @@
     color: #687d20;
   }
   .multi-episode-title{
-    font-family: "Gotham";
+    font-family: "Gotham-Bold";
     font-size: 20px;
     font-weight: bold;
     font-stretch: normal;
@@ -280,5 +336,42 @@
     background: #bfbfbf; 
   }
   
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    
+  }
   
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px 20px 12px 20px;
+    border: 1px solid #888; 
+    width: 85vw !important;
+    top: 10vh !important;
+
+  }
+   
+  .closemodal {
+    
+    position: absolute;
+    top: -40px;
+    right: -15px;
+  }
   
+  .closemodal:hover,
+  .closemodal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
