@@ -231,8 +231,8 @@ img {
   background-size: 150px 100px;
   left: 12%;
   top: 150px;
-  width: 161px;
-  height: 380px;
+  width: 150px;
+  height: 100px;
   opacity: 1;
   position: absolute;
 }
@@ -244,8 +244,8 @@ img {
   background-size: 150px 100px;
   right: 12%;
   bottom: -180px;
-  width: 161px;
-  height: 380px;
+  width: 150px;
+  height: 100px;
   opacity: 1;
   position: absolute;
 }
@@ -630,7 +630,7 @@ input[type="checkbox"] {
   .q-l {
     background-size: 70px 50px;
     left: 2px;
-    top: 55px;
+    top: 5px;
     width: 70px;
     height: 50px;
   }
