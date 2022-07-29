@@ -48,20 +48,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-meta-collapse">
           <div class="navbar-nav ms-auto">
-            <a href="#" class="nav-item nav-link fs-6"
+            <a href="#home" class="nav-item nav-link fs-6"
               ><p class="fs-5">Home</p></a
             >
-            <a href="#" class="nav-item nav-link"
+            <a href="#overview" class="nav-item nav-link"
               ><p class="fs-5">Overview</p></a
             >
-            <a href="#" class="nav-item nav-link"
+            <a href="#speakers" class="nav-item nav-link"
               ><p class="fs-5">Speakers</p></a
             >
-            <a href="#" class="nav-item nav-link"
+            <a href="#episodes" class="nav-item nav-link"
               ><p class="fs-5">Episodes</p></a
             >
-            <a href="#" class="nav-item nav-link"><p class="fs-5">Quotes</p></a>
-            <a href="#" class="nav-item nav-link"
+            <a href="#quotes" class="nav-item nav-link"><p class="fs-5">Quotes</p></a>
+            <a href="#contactus" class="nav-item nav-link"
               ><p class="fs-5">Contact Us</p></a
             >
           </div>
@@ -70,13 +70,14 @@
     </nav>
 
     <!-- Banner -->
-    <section class="corosoul">
+    <section id="home" class="corosoul">
       <div class="sl-container">
         <div class="sl sl-fade">
           <img
             src="./assets/images/banner/banner-1.png"
             style="width: 100%"
             height="750"
+            class="sl-image"
           />
         </div>
 
@@ -85,6 +86,7 @@
             src="./assets/images/banner/banner-2.png"
             style="width: 100%"
             height="750"
+            class="sl-image"
           />
         </div>
 
@@ -99,7 +101,7 @@
     </section>
 
     <!-- Overview -->
-    <section class="overview">
+    <section id="overview" class="overview">
       <div class="overview-wrapper">
         <div class="row">
           <div class="col-sm-12 col-lg-5">
@@ -157,7 +159,7 @@
     </section>
 
     <!-- quotes -->
-    <section class="quotes">
+    <section id="quotes" class="quotes">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
@@ -280,9 +282,9 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contactus" class="contact">
       <div class="container-fluid">
-        <div class="contact-section-heading">Contact Us</div>
+        <div class="contact-section-heading">Contact us</div>
         <div class="row">
           <div class="col-md-1 col-sm-0"></div>
           <div class="col-md-10 col-sm-12">
@@ -293,7 +295,7 @@
                     type="text"
                     name="firstName"
                     id="firstName"
-                    placeholder="First Name"
+                    placeholder="First Name*"
                     required
                   />
                 </div>
@@ -302,7 +304,8 @@
                     type="text"
                     name="lastName"
                     id="lastName"
-                    placeholder="Last Name"
+                    placeholder="Last Name*"
+                    required
                   />
                 </div>
               </div>
@@ -312,16 +315,15 @@
                   <input
                     type="text"
                     name="organization"
-                    placeholder="Organization Name"
-                    required
+                    placeholder="Organization"
                   />
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <input
                     type="email"
                     name="email"
-                    email="Email"
-                    placeholder="Email"
+                    email="EmailZ"
+                    placeholder="Email ID*"
                     required
                   />
                 </div>
@@ -403,7 +405,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
     <script>
       $(document).ready(function () {
-        window.setInterval(nextSlide, 2000);
+        window.setInterval(nextSlide, 3000);
       });
       let slideIndex = 0;
       showSlides();

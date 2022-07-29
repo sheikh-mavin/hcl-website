@@ -25,15 +25,13 @@
 img {
   vertical-align: middle;
 }
-.nav-bar-hcl a {
-  font-size: 13px;
-}
 
 /* Slideshow container */
 .sl-container {
   max-width: 100%;
   position: relative;
   margin: auto;
+  height: auto;
 }
 
 .scroller {
@@ -53,12 +51,12 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.text {
+/* .text {
   position: absolute;
   bottom: 10%;
   margin-left: 100px;
   color: rgb(255, 255, 255);
-}
+} */
 
 .sl-active {
   box-shadow: 0 2px 6px 0 rgba(48, 48, 48, 0.5);
@@ -128,10 +126,49 @@ img {
 }
 .slide {
   display: none;
+ 
 }
+
 
 .slide.active {
   display: block;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 /* Featurs */
@@ -155,7 +192,7 @@ img {
   height: 45px;
   margin-left: 300px;
   font-family: Gotham-Bold;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -192,7 +229,7 @@ img {
 
 .quote-wrapper {
   /* border: 1px solid black; */
-  padding: 0px 250px 0px 250px;
+  padding: 37px 250px 0px 250px;
 }
 .quotation-card-wrap {
   border: 1px solid black;
@@ -252,14 +289,15 @@ img {
 
 .owl-item.active.center {
   z-index: 1;
-  left: -100px;
+  left: -120px;
 }
 #customers-testimonials .owl-item.active.center .item {
   opacity: 1;
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
-  width: 568px;
+  width: 600px;
   background-color: white;
+  box-shadow: 0 2px 24px 0 rgba(204, 204, 204, 0.5);
 }
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
@@ -269,14 +307,7 @@ img {
   height: 72px;
   border-radius: 50%;
 }
-#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span {
-  box-shadow: 0 2px 6px 0 rgba(48, 48, 48, 0.5);
-  border: solid 1px #979797;
-  background-color: #fff;
-  width: 28px;
-  height: 15px;
-  border-radius: 50px;
-}
+
 #customers-testimonials.owl-carousel .owl-dots {
   display: inline-block;
   width: 100%;
@@ -290,11 +321,18 @@ img {
   height: 15px;
   width: 15px;
   margin: 0 8px 0px 9px;
-  border: solid 1px #000;
-  background-color: #d8d8d8;
+  border: solid 2px #979797;
+  background-color: transparent;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span {
+  border: solid 1px #979797;
+  background-color: #fff;
+  width: 28px;
+  height: 15px;
+  border-radius: 50px;
 }
 
 
@@ -310,7 +348,7 @@ img {
   margin-left: 130px;
 
   font-family: Gotham-Bold;
-  font-size: 42px;
+  font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -336,9 +374,9 @@ input {
   transition: all 0.2s ease-out;
   font-family: "Gotham";
   width: 100%;
-  height: 60px;
+  height: 50px;
   padding-left: 30px;
-  margin-bottom: 20px !important;
+  margin-bottom: 29px !important;
 }
 
 input:focus {
@@ -369,7 +407,7 @@ input[type="checkbox"] {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 20px !important;
+  font-size: 14px !important;
   color: grey !important;
   line-height: 27px;
   -webkit-user-select: none;
@@ -392,7 +430,7 @@ input[type="checkbox"] {
 }
 .form-info {
   color: rgb(0, 0, 0, 0.5);
-  font-size: 20px !important;
+  font-size: 14px !important;
   font-family: Gotham;
 }
 .indicator {
@@ -426,9 +464,9 @@ input[type="checkbox"] {
   border: none;
   text-align: center;
   letter-spacing: 0px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  font-family: Gotham;
+  font-family: Gotham-Bold;
   cursor: pointer;
 }
 
@@ -513,15 +551,15 @@ input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 768px) {
-  .contact {
-    padding: 10px;
-  }
   .quotes {
     padding:40px 0px 0px 0px;
   }
   .quotes-section-heading {
     margin-left: 0px;
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .contact {
+    padding: 40px 0px 40px 0px;
   }
   .contact-section-heading {
     margin-left: 0px;
@@ -548,6 +586,9 @@ input[type="checkbox"] {
   #customers-testimonials .owl-item.active.center .item {
     width: 100%;
     height: auto;
+  }
+  .sl-image{
+    height: 400px;
   }
 }
 
