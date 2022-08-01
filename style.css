@@ -208,9 +208,16 @@ img {
   letter-spacing: normal;
   color: #242833;
 }
-.flex-container {
+.flex-container-l {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+}
+
+.flex-container-r {
+  display: flex;
+  justify-content: left;
   align-items: center;
   height: 100%;
 }
@@ -229,7 +236,7 @@ img {
   background-image: url("./assets/images/quotes/q-l.png");
   background-repeat: no-repeat;
   background-size: 150px 100px;
-  left: 12%;
+  left: 8%;
   top: 150px;
   width: 150px;
   height: 100px;
@@ -242,7 +249,7 @@ img {
   background-image: url("./assets/images/quotes/q-r.png");
   background-repeat: no-repeat;
   background-size: 150px 100px;
-  right: 12%;
+  right: 8%;
   bottom: 80px;
   width: 150px;
   height: 100px;
@@ -630,7 +637,7 @@ input[type="checkbox"] {
   .q-l {
     background-size: 70px 50px;
     left: 2px;
-    top: 5px;
+    top: 55px;
     width: 70px;
     height: 50px;
   }
