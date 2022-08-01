@@ -18,12 +18,28 @@
   src: url("./assets/fonts/Rubik-Regular.ttf");
 }
 
+.navbar-toggler{
+  border: none !important;
+  font-family: Gotham !important;
+  color: #242833 !important;
+  padding-right: 0px !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 .banner-1 {
   content: url("./assets/images/banner/banner-1.png");
 }
 .banner-2 {
   content: url("./assets/images/banner/banner-2.png");
 }
+
+.banner-3 {
+  content: url("./assets/images/banner/banner-3.png");
+}
+
 
 .sl {
   display: none;
