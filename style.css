@@ -601,13 +601,6 @@ input[type="checkbox"] {
   .sl-image {
     height: 400px;
   }
-
-  .banner-1 {
-    content: url("./assets/images/banner/banner-2-small.png");
-  }
-  .banner-2 {
-    content: url("./assets/images/banner/banner-2-small.png");
-  }
   .scroller {
     margin-left: 16px;
     margin-bottom: -32px;
@@ -664,6 +657,22 @@ input[type="checkbox"] {
     bottom: 55px;
     width: 70px;
     height: 50px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .banner-1 {
+    content: url("./assets/images/banner/banner-2-small.png");
+  }
+  .banner-2 {
+    content: url("./assets/images/banner/banner-2-small.png");
+  }
+  .banner-3 {
+    content: url("./assets/images/banner/banner-2-small.png");
+  }
+  .banner-4 {
+    content: url("./assets/images/banner/banner-2-small.png");
   }
 }
 
