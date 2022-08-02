@@ -54,16 +54,15 @@
             <a href="#overview" class="nav-item nav-link"
               ><p class="fs-5">Overview</p></a
             >
-            <a href="#speakers" class="nav-item nav-link"
-              ><p class="fs-5">Speakers</p></a
+            <a href="#feature" class="nav-item nav-link"
+              ><p class="fs-5">Features</p></a
             >
+            
             <a href="#episodes" class="nav-item nav-link"
               ><p class="fs-5">Episodes</p></a
             >
             <a href="#quotes" class="nav-item nav-link"><p class="fs-5">Quotes</p></a>
-            <a href="#contactus" class="nav-item nav-link"
-              ><p class="fs-5">Contact Us</p></a
-            >
+           
           </div>
         </div>
       </div>
@@ -166,13 +165,16 @@
     </section>
 
 
-    <section class="feature">
-      <div class="container-fluid">
+    <section id="feature">
+      <div class="container">
         <h2 class="title">Features</h2>
-      </div> 
+     
       <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> -->
-        <div class="row g-2">
-          <div class="col-10">
+        
+
+        <div style="display: flex;
+        justify-content: space-between;">
+          <div>
             <button class="btn btn-secondary season-dropdown" type="button">
               Season 1
             </button>
@@ -187,7 +189,7 @@
               </ul>
             </div> -->
           </div>
-          <div class="col-2" style="text-align: center;">
+          <div>
             <button class="feature-control-icons" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -198,14 +200,15 @@
             </button>
           </div>
         </div>
+      </div> 
   
   
   
-        <div class="carousel-inner" style="padding-top: 30px;">
+        <div class="carousel-inner">
           <!-- Feature Season 1-->
           <div class="carousel-item active">
             <div class="season-card-container">
-              <div class="container-fluid">
+              <div class="container">
                 <div class="row g-4" >
   
                   <div class="col-3">

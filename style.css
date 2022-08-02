@@ -552,45 +552,42 @@ input[type="checkbox"] {
  
 /* Featurs */
 
-.feature{
+#feature{
   background-image:url(./assets/images/feature/features-bg.webp);
-  background-size: 100% 100%; 
-  height: 100vh;
+  background-size: 100% 100%;  
   width: 100%; 
   font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 45px;
   letter-spacing: normal;
-  color: #242833; 
-  padding:0 5px 0 8% !important;
+  color: #242833;  
+  padding: 60px 0px 100px 0px;
 }
-.feature .card{
-  height: 59vh ; 
-  width: 97%;
-}
+ 
 
-.feature .card-body{
+#feature .card-body{
   padding: 15px !important;
 }
 
-.feature .card:hover{
+#feature .card:hover{
   /* transform: scale(1.08); */
-  height: 62vh;
+  
   top: -10px;
   margin-top: 0px;
 }
-.feature .card:hover .overlay{
+#feature .card:hover .overlay{
   opacity: 1;
   background-color: rgb(0, 0, 0, 0.8)
 }
 
  
-.feature .card:hover img{
+#feature .card:hover img{
   height: 100%;
 }
-/* .feature .card:hover .card-img-top-featured-speaker{
+
+/* #feature .card:hover .card-img-top-featured-speaker{
   height: 50vh !important;
 } */
 
@@ -600,7 +597,7 @@ input[type="checkbox"] {
   bottom: 0;
   left: 0;
   right: 0; 
-  height: calc(62vh - 118px);
+  height: 355px;
   width: 100%;
   opacity: 0;
   transition: .1s ease; 
@@ -626,69 +623,70 @@ input[type="checkbox"] {
 
 
 .card-img-top-featured-speaker{
-  height: 43vh;
+  height: 320px;
 }
 
-.feature .host-speaker{
+#feature .host-speaker{
   box-shadow: 0 5px 14px 0 rgba(217, 217, 217, 0.5);
   background-color: #006bb6;
+  padding: 15px 20px;
 }
 
-.feature .guest-speaker{
+#feature .guest-speaker{
   box-shadow: 0 5px 14px 0 rgba(217, 217, 217, 0.5);
   background-color: #98bd22;
+  padding: 15px 20px;
 }
 
-.feature .speaker-type{
+#feature .speaker-type{
   font-family: "Gotham";
   font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 16px;
   letter-spacing: 0.5px;
   color: #fff;
 }
 
-.feature .speaker-name{
+#feature .speaker-name{
   font-family: "Gotham-Bold";
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 26px;
   letter-spacing: normal;
   color: #fff;
   padding: 7px 0px;
 }
 
-.feature .speaker-role{
+#feature .speaker-role{
   font-family: "Gotham";
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
+  line-height: 15px;
   letter-spacing: normal;
   color: #fff;
 }
-.feature .season-dropdown{
+#feature .season-dropdown{
   font-family: "Gotham";
-    font-size: 20px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    letter-spacing: normal;
-    color: #242833;
-    border-radius: 20px;
-    background-color: #dee5c7;
-    border: 0px;
-    margin: 5px;
-    padding:5px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #242833;
+  border-radius: 20px;
+  background-color: #dee5c7;
+  border: 0px;
+  margin-bottom: 30px;
 }
 
 .feature-control-icons{
-  border: 0px;
+  border: 0px !important;
         background: transparent;
         padding: 0px;
 
@@ -711,14 +709,14 @@ input[type="checkbox"] {
   color: black !important;
 }
 
-.feature .title {
-  padding-top: 10vh;
+#feature .title {
+  padding-top :0px;
   font-family: "Poppins";
   font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.25;
+  line-height: 60px;
   letter-spacing: normal;
   color: #242833;
 }
@@ -1008,46 +1006,35 @@ input[type="checkbox"] {
   }
 }
 
-
-@media only screen
-and (min-width : 768px)
-and (max-width : 1024px)
-and (orientation : portrait) {
-/* Styles */
-}
+ 
  
 /* Desktops and laptops ----------- */
-@media only screen
-and (max-width : 1224px) {
-  .episodes{
-    background-position: left 1% bottom 1%;
-    height: 114vh;
+ /* @media only screen
+and (max-width : 1400px) {
+  .card-img-top-featured-speaker{
+    height: 320px !important;
   }
   
-}
-
+} */
+/*
 @media only screen
 and (min-width : 1225px)
-and (max-width : 1400px) {
-/* Styles */
+and (max-width : 1400px) { 
 .episodes{  
 background-position: left 1vw bottom 4vh;
 } 
 }
 @media only screen
 and (min-width : 1401px)
-and (max-width : 1599px) {
-/* Styles */
+and (max-width : 1599px) { 
 .episodes{  
 background-position: left 2vw bottom 2vh;
 } 
 }
- 
-/* Large screens ----------- */
+  
 @media only screen
 and (min-width : 1600px)
-and (max-width : 1750px) {
-/* Styles */
+and (max-width : 1750px) { 
 .episodes{  
 background-position: left 2vw bottom 8vh;
 } 
@@ -1060,7 +1047,7 @@ and (max-width : 1449px) {
   .overlay{
     height: calc(62vh - 92px);
   }
-  .feature .card{ 
+  #feature .card{ 
     height: 60vh;
   }
 }
@@ -1071,7 +1058,7 @@ and (max-width : 1600px) {
   .overlay{
     height: calc(62vh - 98px);
   }
-  .feature .card{ 
+  #feature .card{ 
     height: 59vh;
   }
 }
@@ -1082,7 +1069,7 @@ and (max-width : 1750px) {
   .overlay{
     height: calc(62vh - 105px);
   }
-  .feature .card{ 
+  #feature .card{ 
     height: 57vh;
   }
 }
@@ -1107,16 +1094,16 @@ and (max-width : 2200px) {
 @media only screen
 and (min-width : 1751px)
 and (max-width : 2200px) {
-/* Styles */
+ 
 .episodes{  
 background-position: left 3vw bottom 7vh; 
 height: 100vh;
 } 
-.feature .card{
+#feature .card{
   height: 56vh ; 
   width: 97%;
 }
-.feature .speaker-role,.feature .speaker-type{
+#feature .speaker-role,#feature .speaker-type{
   font-size: 17px ;
 }
 .overlay .overlay-description{
@@ -1126,19 +1113,18 @@ height: 100vh;
 }
 
 @media only screen
-and (min-width : 2251px) {
-/* Styles */
+and (min-width : 2251px) { 
 .episodes{  
   background-position: left 4vw bottom 7vh;
   height: 95vh;
 } 
-.feature .speaker-role,.feature .speaker-type,.overlay .overlay-description{
+#feature .speaker-role,#feature .speaker-type,.overlay .overlay-description{
   font-size: 20px ;
 }
 .single-episode-details,.single-episode-audio a, .single-episode-pdf a{
   font-size: 18px;
 }
-.feature .card{
+#feature .card{
   height: 55vh ; 
   width: 97%;
 }
@@ -1147,7 +1133,7 @@ and (min-width : 2251px) {
 }
 
 }
-
+ */
 
 
  
