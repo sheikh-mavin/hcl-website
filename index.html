@@ -73,14 +73,14 @@
     <!-- Banner -->
     <div id="home" class="corosoul">
       <div class="sl-container">
-        <div class="sl sl-fade">
+        <div class="sl sl-fade" ref="ban-1">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
         </div>
 
-        <div class="sl sl-fade">
+        <div class="sl sl-fade" ref="ban-2">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
         </div>
-        <div class="sl sl-fade">
+        <div class="sl sl-fade" ref="ban-3">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-3" />
         </div>
         <div class="banner-text">
@@ -96,9 +96,9 @@
 
           <p class="hash">#InspireTomorrow</p>
           <div class="scroller">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot" id="ban-1"></span>
+            <span class="dot" id="ban-2"></span>
+            <span class="dot" id="ban-3"></span>
           </div>
         </div>
 
@@ -1172,6 +1172,31 @@
     ></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
     <script>
+      $('.dot').click(e => {
+
+
+        let slides = document.getElementsByClassName("sl");
+        let dots = document.getElementsByClassName("dot");
+
+        const ss = document.querySelector(`div[ref='${e.target.id}']`);
+        let sd = document.getElementById(event.target.id);
+
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" sl-active", "");
+        }
+        ss.style.display = "block";
+        sd.className += " sl-active";
+        
+      });
+
+
       $(document).ready(function () {
         window.setInterval(nextSlide, 4000);
       });
