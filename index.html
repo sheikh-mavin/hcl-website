@@ -43,7 +43,8 @@
           class="navbar-toggler"
           data-bs-toggle="collapse"
           data-bs-target="#navbar-meta-collapse"
-        > Menu
+        >
+          Menu
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-meta-collapse">
@@ -57,12 +58,13 @@
             <a href="#feature" class="nav-item nav-link"
               ><p class="fs-5">Features</p></a
             >
-            
+
             <a href="#episodes" class="nav-item nav-link"
               ><p class="fs-5">Episodes</p></a
             >
-            <a href="#quotes" class="nav-item nav-link"><p class="fs-5">Quotes</p></a>
-           
+            <a href="#quotes" class="nav-item nav-link"
+              ><p class="fs-5">Quotes</p></a
+            >
           </div>
         </div>
       </div>
@@ -72,36 +74,35 @@
     <section id="home" class="corosoul">
       <div class="sl-container">
         <div class="sl sl-fade">
-          <img
-            style="width: 100%"
-            height="750"
-            class="sl-image banner-1"
-          />
+          <img style="width: 100%"  class="sl-image banner-1" />
         </div>
 
-        <div class="sl sl-fade">
-          <img
-            style="width: 100%"
-            height="750"
-            class="sl-image banner-2"
-          />
+        <!-- <div class="sl sl-fade">
+          <img style="width: 100%" class="sl-image banner-2" />
         </div>
         <div class="sl sl-fade">
-          <img
-            style="width: 100%"
-            height="750"
-            class="sl-image banner-3"
-          />
+          <img style="width: 100%" class="sl-image banner-3" />
+        </div> -->
+        <div class="banner-text">
+          <p class="insp">
+            <span class="inspire">Inspired</span> to overcome <br> and  achieve the<br>
+            impossible
+          </p>
+          <p class="colb">
+            A look into how collaboration <br> leads to a better tomorrow
+          </p>
+          <br>
+    
+          <p class="hash">#InspireTomorrow</p>
+          <div class="scroller">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
         </div>
 
-
-        <br />
-        <div class="scroller">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
+       
         <!-- <div class="text"><p class="fs-3">#InspiringTomorrow</p></div> -->
       </div>
     </section>
@@ -111,7 +112,7 @@
       <div class="overview-wrapper">
         <div class="row">
           <div class="col-sm-12 col-lg-5">
-            <div class="slider" id="mySlider">
+            <div class="slider" style="position: relative" id="mySlider">
               <div class="slide-group">
                 <div class="slide active">
                   <img
@@ -137,7 +138,6 @@
           <div class="col-sm-12 col-lg-7">
             <div class="overview-text-wrapper">
               <p class="overview-heading">
-                
                 <span>
                   The <span class="mega">MEGA</span>
                   <span class="talks">Talks</span>
@@ -164,16 +164,13 @@
       </div>
     </section>
 
-
     <section id="feature">
       <div class="container">
         <h2 class="title">Features</h2>
-     
-      <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> -->
-        
 
-        <div style="display: flex;
-        justify-content: space-between;">
+        <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false"> -->
+
+        <div style="display: flex; justify-content: space-between">
           <div>
             <button class="btn btn-secondary season-dropdown" type="button">
               Season 1
@@ -190,12 +187,28 @@
             </div> -->
           </div>
           <div>
-            <button class="feature-control-icons" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button
+              class="feature-control-icons"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="feature-control-icons" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" >
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button
+              class="feature-control-icons"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
@@ -229,12 +242,16 @@
                           </a> 
                         </div>
                       </div>
-                      <div class="card-body host-speaker">
-                        <div class="speaker-type">SEASON HOST</div>
-                        <div class="speaker-name">Ajay Bahl</div>
-                        <div class="speaker-role">Corp. VP & Head of Mega Vertical in HCL America</div>
+                       
+                   
+                    <div class="card-body host-speaker">
+                      <div class="speaker-type">SEASON HOST</div>
+                      <div class="speaker-name">Ajay Bahl</div>
+                      <div class="speaker-role">
+                        Corp. VP & Head of Mega Vertical in HCL America
                       </div>
-                    </div> 
+                    </div>
+                  </div>
                   </div>
   
                   <div class="col-3">
@@ -298,12 +315,15 @@
                           <img src="./assets/images/feature/play-button.png" />
                         </div>
                       </div>
-                      <div class="card-body guest-speaker">
-                        <div class="speaker-type">GUEST</div>
-                        <div class="speaker-name">Rhonda O. Gass</div>
-                        <div class="speaker-role">Vice President & COO <br>at Stanley Black & Decker</div>
+                    
+                    <div class="card-body guest-speaker">
+                      <div class="speaker-type">GUEST</div>
+                      <div class="speaker-name">Gary Cantrell</div>
+                      <div class="speaker-role">
+                        Ex- Chief Information Officer & SVP Information Tech
                       </div>
-                    </div> 
+                    </div>
+                  </div>
                   </div>
   
                   <div class="col-3"> 
@@ -324,12 +344,16 @@
                           <img src="./assets/images/feature/play-button.png" />
                         </div>
                       </div>
-                      <div class="card-body guest-speaker">
-                        <div class="speaker-type">GUEST</div>
-                        <div class="speaker-name">Bask Iyer</div>
-                        <div class="speaker-role">CEO of Bask Mind & Adviser and Board Member </div>
+                      
+                    
+                    <div class="card-body guest-speaker">
+                      <div class="speaker-type">GUEST</div>
+                      <div class="speaker-name">Rhonda O. Gass</div>
+                      <div class="speaker-role">
+                        Vice President & COO <br />at Stanley Black & Decker
                       </div>
                     </div> 
+                  </div>
                   </div>
   
                 </div>
@@ -469,7 +493,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
 
               <div class="card p-0 multi-card" style="margin-bottom: 20px;"> 
                 <span id="episode-link" style="display: none;">https://www.youtube.com/embed/ZEi-sO0q5Uo</span>
@@ -571,9 +594,20 @@
           </div>
         </div>
 
-      </div>
-  </section>
+        <!-- Feature Season 2-->
+        <div class="carousel-item">
+          <div>Soon to be Updated</div>
+        </div>
 
+        <!-- Feature Season 3-->
+        <div class="carousel-item">
+          <div>Soon to be Updated</div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </section>
+
+ 
 
     <!-- quotes -->
     <section id="quotes" class="quotes">
@@ -698,9 +732,9 @@
             </div>
           </div>
         </div>
-        </div>
+      </div>
     </section>
-<!-- 
+    <!-- 
     <section id="contactus" class="contact">
       <div class="container-fluid g-0">
         <div class="contact-section-heading">Contact us</div>
@@ -803,7 +837,7 @@
       </div>
     </section> -->
 
-    <section class="footer1">
+    <!-- <section class="footer1">
       <div class="container-fluid">
         <div class="row">
           <div class="col-2">Industries</div>
@@ -813,7 +847,7 @@
           <div class="col-2">Contact Us</div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>
@@ -844,26 +878,28 @@
         });
         $(".multi-card").click(function () {
           $(this).addClass("active");
-          var episodeLink = document.querySelector('.multi-card.active #episode-link');
-          var audioLink = document.querySelector('.multi-card.active #audio-link');
-          var pdfLink = document.querySelector('.multi-card.active #pdf-link');
-          var episodeDetails = document.querySelector('.multi-card.active .multi-episode-details');
-          var episodeTitle = document.querySelector('.multi-card.active .multi-episode-title'); 
-          document.querySelector('.single-episode-details').innerText = episodeDetails.innerText;
-          document.querySelector('.single-episode-title').innerText = episodeTitle.innerText;
+          var episodeLink = document.querySelector(
+            ".multi-card.active #episode-link"
+          );
+          var audioLink = document.querySelector(
+            ".multi-card.active #audio-link"
+          );
+          var pdfLink = document.querySelector(".multi-card.active #pdf-link");
+          var episodeDetails = document.querySelector(
+            ".multi-card.active .multi-episode-details"
+          );
+          var episodeTitle = document.querySelector(
+            ".multi-card.active .multi-episode-title"
+          );
+          document.querySelector(".single-episode-details").innerText =
+            episodeDetails.innerText;
+          document.querySelector(".single-episode-title").innerText =
+            episodeTitle.innerText;
           // document.querySelector('single-episode-audio').innerText = audioLink;
           // document.querySelector('single-episode-pdf').innerText = pdfLink;
-          var singleiframe = document.querySelector('.single-episode-iframe');
-          singleiframe.setAttribute("src", episodeLink.innerText)
-        });
-
-
-
-  
-  
-  
-  
-  
+          var singleiframe = document.querySelector(".single-episode-iframe");
+          singleiframe.setAttribute("src", episodeLink.innerText);
+        }); 
       });
 
       //Audio Js
@@ -996,8 +1032,6 @@
         // Parameters has to be in square bracket '[]'
         owl.trigger("prev.owl.carousel", [300]);
       });
-
-      
     </script>
   </body>
 </html>
