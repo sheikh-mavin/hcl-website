@@ -774,6 +774,28 @@ input[type="checkbox"] {
     color: #242833; 
     padding:100px 0px;
   }
+  .mobileShow{
+    display: none;
+  }
+
+  .other-episodes{
+    font-family: "Gotham-Bold";
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 45px;
+    letter-spacing: normal;
+    color: #242833;
+    margin-top: -10px;
+
+  }
+
+  .single-audiopdf-wrapper{
+    display: flex; 
+    padding-top: 20px;
+    align-items: center;
+  }
   #episodes .title{
     
     font-family: "Gotham-Bold";
@@ -818,7 +840,7 @@ input[type="checkbox"] {
     color: #242833;
     padding-top: 10px;
   }
-  .single-episode-audio,.single-episode-pdf{
+  .single-episode-audio{
     font-family: "Gotham-Bold";
     font-size: 14px;
     font-weight: bold;
@@ -827,6 +849,19 @@ input[type="checkbox"] {
     line-height: normal;
     letter-spacing: normal;
     color: #000;
+    display: flex;
+                  flex: 6;align-items: center;
+  }
+  .single-episode-pdf{
+    font-family: "Gotham-Bold";
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    flex: 2;text-align:right;
   }
   .single-episode-audio a,.single-episode-pdf a{
     font-family: "Gotham-Bold";
@@ -882,6 +917,9 @@ input[type="checkbox"] {
   color: #242833;
  }
 
+ .episode-vedio-wrapper{
+  height: 395px;
+ }
  
 
 
@@ -934,42 +972,34 @@ input[type="checkbox"] {
     background: #bfbfbf; 
   }
   
-  .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+   
+  .feature-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 20vh;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
-  }
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgb(6 5 5 / 44%);
+}
   
   /* Modal Content */
-  .modal-content {
+  .feature-modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px 20px 12px 20px;
     border: 1px solid #888; 
     width: 85vw !important;
     top: 10vh !important;
-
-  height: 105vh;
-  width: 100%;
-  font-family: "Gotham";
-  font-size: 36px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  color: #242833;
-  padding: 0px 8%;
 }
+
+ 
+
+
 .episodes .title {
   padding-top: 10vh;
   font-family: "Gotham-Bold";
@@ -1083,39 +1113,19 @@ input[type="checkbox"] {
 ::-webkit-scrollbar-thumb {
   background: #bfbfbf;
 }
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
+ 
 
 /* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px 20px 12px 20px;
-  border: 1px solid #888;
-  width: 85vw !important;
-  top: 10vh !important;
+
+
+.closemodalFeature {
+  position: fixed;
+  top: 16vh;
+  right: 6vw;
 }
 
-.closemodal {
-  position: absolute;
-  top: -40px;
-  right: -15px;
-}
-
-.closemodal:hover,
-.closemodal:focus {
+.closemodalFeature:hover,
+.closemodalFeature:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -1433,6 +1443,7 @@ input[type="checkbox"] {
   .overview {
     padding: 8% 10px !important;
   }
+ 
 
 }
 
@@ -1442,3 +1453,52 @@ input[type="checkbox"] {
   }
 
 }
+
+
+/*Feature and Episode Responsive*/
+ 
+@media screen and (max-width: 480px){
+  #episodes{
+    padding: 45px 0;
+    background-image: none;
+  }
+  .episode-vedio-wrapper{
+    height: 195px;
+   }
+   #episodes > .container{
+    padding: 0px;
+   }
+   #episodes .title{
+    padding-bottom:5px ;
+    padding-left: 15px;
+   }
+   #episodes > .card .card-body{
+    padding:10px 15px 15px 15px;
+   }
+   .single-episode-title{
+    padding-top: 3px;
+   }
+   .single-audiopdf-wrapper{
+    padding-top: 8px;
+   }
+   .single-audiopdf-wrapper{
+    flex-direction: column;
+    align-items: unset;
+   }
+   .single-episode-audio{
+
+   } 
+   .single-episode-pdf{
+    text-align: center;
+    padding-top: 15px;
+   }
+   .mobileShow{
+    display: block;
+  }
+   
+}  
+
+@media screen and (min-width: 768px){
+  
+}  
+ 
