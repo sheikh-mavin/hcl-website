@@ -322,13 +322,13 @@ img {
 
 #customers-testimonials .item {
   text-align: center;
-  opacity: 0.2;
+
   -webkit-transform: scale3d(0.9, 0.9, 1);
   transform: scale3d(0.9, 0.9, 1);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #d8dbd1;
+  background-color: #f6f8f2;
   height: 350px;
   padding: 50px;
   overflow: hidden;
@@ -1440,3 +1440,11 @@ input[type="checkbox"] {
 }
 
 
+
+@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+  .quote-wrapper {
+    /* border: 1px solid black; */
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+}
