@@ -375,3 +375,133 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  
+ 
+/* Desktops and laptops ----------- */
+ /* @media only screen
+and (max-width : 1400px) {
+  .card-img-top-featured-speaker{
+    height: 320px !important;
+  }
+  
+} */
+/*
+@media only screen
+and (min-width : 1225px)
+and (max-width : 1400px) { 
+#episodes{  
+background-position: left 1vw bottom 4vh;
+} 
+}
+@media only screen
+and (min-width : 1401px)
+and (max-width : 1599px) { 
+#episodes{  
+background-position: left 2vw bottom 2vh;
+} 
+}
+  
+@media only screen
+and (min-width : 1600px)
+and (max-width : 1750px) { 
+#episodes{  
+background-position: left 2vw bottom 8vh;
+} 
+ 
+}
+
+@media only screen
+and (min-width : 1300px)
+and (max-width : 1449px) {
+  .overlay{
+    height: calc(62vh - 92px);
+  }
+  #feature .card{ 
+    height: 60vh;
+  }
+}
+
+@media only screen
+and (min-width : 1450px)
+and (max-width : 1600px) {
+  .overlay{
+    height: calc(62vh - 98px);
+  }
+  #feature .card{ 
+    height: 59vh;
+  }
+}
+
+@media only screen
+and (min-width : 1601px)
+and (max-width : 1750px) {
+  .overlay{
+    height: calc(62vh - 105px);
+  }
+  #feature .card{ 
+    height: 57vh;
+  }
+}
+
+@media only screen
+and (min-width : 1751px)
+and (max-width : 2050px) {
+  .overlay{
+    height: calc(62vh - 115px);
+  }
+ 
+}
+
+@media only screen
+and (min-width : 2051px)
+and (max-width : 2200px) {
+  .overlay{
+  height: calc(62vh - 118px);
+}
+}
+
+@media only screen
+and (min-width : 1751px)
+and (max-width : 2200px) {
+ 
+#episodes{  
+background-position: left 3vw bottom 7vh; 
+height: 100vh;
+} 
+#feature .card{
+  height: 56vh ; 
+  width: 97%;
+}
+#feature .speaker-role,#feature .speaker-type{
+  font-size: 17px ;
+}
+.overlay .overlay-description{
+  font-size: 19px;
+}
+
+}
+
+@media only screen
+and (min-width : 2251px) { 
+#episodes{  
+  background-position: left 4vw bottom 7vh;
+  height: 95vh;
+} 
+#feature .speaker-role,#feature .speaker-type,.overlay .overlay-description{
+  font-size: 20px ;
+}
+.single-episode-details,.single-episode-audio a, .single-episode-pdf a{
+  font-size: 18px;
+}
+#feature .card{
+  height: 55vh ; 
+  width: 97%;
+}
+.overlay{
+  height: calc(62vh - 132px);
+}
+
+}
+ */
+
