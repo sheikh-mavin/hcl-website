@@ -1230,7 +1230,7 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 500px;
+    height: 300px;
   }
 
   .banner-1 {
@@ -1243,14 +1243,10 @@ input[type="checkbox"] {
     content: url("./assets/images/banner/banner-3-small.png");
   }
 
-  .insp {
-    font-size: 25px;
-    line-height: 35px;
-  }
 
   .insp {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .colb {
@@ -1259,7 +1255,7 @@ input[type="checkbox"] {
   
   }
   .hash {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .scroller {
@@ -1280,7 +1276,7 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 550px;
+    height: 400px;
   }
 
 
@@ -1289,13 +1285,13 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 600px;
+    height: 300px;
   }
 
 
   .insp {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .colb {
@@ -1304,8 +1300,9 @@ input[type="checkbox"] {
   
   }
   .hash {
-    font-size: 17px;
+    font-size: 16px;
   }
+
 
   .overview {
     padding: 22px 16px !important;
@@ -1320,22 +1317,22 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 600px;
+    height: 350px;
   }
 
 
   .insp {
-    font-size: 66px;
-    line-height: 70px;
+    font-size: 48px;
+    line-height: 48px;
   }
 
   .colb {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 22px;
   
   }
   .hash {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .overview {
@@ -1352,16 +1349,16 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 650px;
+    height: 400px;
   }
   .insp {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 56px;
+    line-height: 56px;
   }
 
   .colb {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 25px;
   
   }
   .hash {
@@ -1381,22 +1378,22 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 700px;
+    height: 450px;
   }
 
 
   .insp {
-    font-size: 85px;
-    line-height: 65px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .colb {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 25px;
   
   }
   .hash {
-    font-size: 27px;
+    font-size: 24px;
   }
 
   .overview {
@@ -1405,6 +1402,9 @@ input[type="checkbox"] {
 
 }
 
+
+
+
 @media screen and (min-width: 1070px) {
 
   .banner-text {
@@ -1412,22 +1412,22 @@ input[type="checkbox"] {
   }
 
   .sl-image{
-    height: 750px;
+    height: 700px;
   }
 
 
   .insp {
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 86px;
+    line-height: 100px;
   }
 
   .colb {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 45px;
   
   }
   .hash {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .overview {
