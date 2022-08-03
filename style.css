@@ -607,10 +607,7 @@ input[type="checkbox"] {
 }
 
 #feature .card:hover {
-  transform: scale(1.08);
-
-  /* top: -10px;
-  margin-top: 0px; */
+  transform: scale(1.08); 
 }
 #feature .card:hover .overlay {
   opacity: 1;
@@ -621,16 +618,7 @@ input[type="checkbox"] {
   height: 340px;  
   text-align: center;
     background: #323236;
-}
-
-/* #feature .card:hover .image-holder-feature{
-  height: 370px;
-}
-  
-#feature .card:hover .card-img-top-featured-speaker{
-  height: 100%;
-  width: 100%;
-} */
+} 
 
 .overlay {
   position: absolute;
