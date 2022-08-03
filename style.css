@@ -1395,6 +1395,7 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1070px) {
+
   .banner-text {
     margin-right: 10px;
   }
@@ -1470,6 +1471,9 @@ input[type="checkbox"] {
     /* border: 1px solid black; */
     padding: 0px 0px 0px 0px;
     width: 100%;
+  }
+  .quotes-section-heading {
+    margin-left: 90px;
   }
 }
 /*Feature and Episode Responsive*/
