@@ -605,6 +605,9 @@ input[type="checkbox"] {
 #feature .card-body {
   padding: 15px !important;
 }
+#feature .card{
+  transition: transform .6s;
+}
 
 #feature .card:hover {
   transform: scale(1.08); 
@@ -749,6 +752,7 @@ input[type="checkbox"] {
   line-height: 60px;
   letter-spacing: normal;
   color: #242833;
+  margin-bottom: 0px;
 }
 
   /* Episode Css*/
