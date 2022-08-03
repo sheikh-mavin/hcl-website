@@ -602,11 +602,11 @@ input[type="checkbox"] {
   padding: 15px !important;
 }
 #feature .card{
-  transition: transform .6s;
+  transition: transform .8s;
 }
 
 #feature .card:hover {
-  transform: scale(1.08); 
+  transform: scale(1.08);
 }
 #feature .card:hover .overlay {
   opacity: 1;
@@ -617,7 +617,7 @@ input[type="checkbox"] {
   height: 340px;
   text-align: center;
     background: #323236;
-} 
+}
 
 .overlay {
   position: absolute;
@@ -744,7 +744,7 @@ input[type="checkbox"] {
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 60px;
+  line-height: 36px;
   letter-spacing: normal;
   color: #242833;
   margin-bottom: 0px;
@@ -755,8 +755,8 @@ input[type="checkbox"] {
   background-image: url(assets/images/episode/mega-talks-logo-final-logo-01.png);
   background-repeat: no-repeat;
   background-position: left 10px bottom 30px;
-  
-   
+
+
     /* height: 105vh; */
     /* width: 100%; */
     font-family: "Gotham";
@@ -766,7 +766,7 @@ input[type="checkbox"] {
     font-style: normal;
     line-height: 1.25;
     letter-spacing: normal;
-    color: #242833; 
+    color: #242833;
     padding:100px 0px;
   }
   .mobileShow{
@@ -787,22 +787,22 @@ input[type="checkbox"] {
   }
 
   .single-audiopdf-wrapper{
-    display: flex; 
+    display: flex;
     padding-top: 20px;
     align-items: center;
   }
   #episodes .title{
-    
+
     font-family: "Gotham-Bold";
     font-size: 36px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 45px;
+    line-height: 36px;
     letter-spacing: normal;
     color: #242833;
     margin-bottom: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 
   }
   .multi-card{
@@ -813,7 +813,7 @@ input[type="checkbox"] {
   #episodes .multi-card.active{
     opacity: 1;
   }
-  
+
   .single-episode-details{
     font-family: "Gotham-Medium";
     font-size: 14px;
@@ -846,6 +846,7 @@ input[type="checkbox"] {
     color: #000;
     display: flex;
                   flex: 6;align-items: center;
+                  gap:10px;
   }
   .single-episode-pdf{
     font-family: "Gotham-Bold";
@@ -869,7 +870,7 @@ input[type="checkbox"] {
     color: #000;
     text-decoration: none;
   }
- 
+
 .audio-player {
   height: 50px;
   width: 350px;
@@ -916,7 +917,7 @@ input[type="checkbox"] {
  .episode-vedio-wrapper{
   height: 395px;
  }
- 
+
 
 .Line-1 {
   width: 1px;
@@ -954,6 +955,8 @@ input[type="checkbox"] {
     line-height: 1.25;
     letter-spacing: normal;
     color: #242833;
+    margin-top: 5px;
+
   }
   .multi-episode-date{
     font-family: "Gotham";
@@ -965,25 +968,25 @@ input[type="checkbox"] {
     letter-spacing: -0.2px;
     color: #7e7e7e;
   }
-  
+
   .Line-1 {
     width: 1px;
     height: 14px;
     margin: 4px 14px 2px 15px;
     border: solid 1px #b9b9b9;
   }
-  
+
   ::-webkit-scrollbar {
     width: 7px;
-  } 
+  }
   ::-webkit-scrollbar-track {
-    background: #e4e1e1; 
+    background: #e4e1e1;
   }
   ::-webkit-scrollbar-thumb {
-    background: #bfbfbf; 
+    background: #bfbfbf;
   }
-  
-   
+
+
   .feature-modal {
     display: none;
     position: fixed;
@@ -993,22 +996,22 @@ input[type="checkbox"] {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgb(6 5 5 / 44%);
+    overflow: hidden;
 }
-  
+
   /* Modal Content */
   .feature-modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px 20px 12px 20px;
-    border: 1px solid #888; 
+    border: 1px solid #888;
     width: 85vw !important;
     top: 10vh !important;
 }
 
- 
+
 
 
 .episodes .title {
@@ -1052,7 +1055,7 @@ input[type="checkbox"] {
   line-height: 1.04;
   letter-spacing: normal;
   color: #242833;
-  padding-top: 8px;
+  padding-top: 10px;
 }
 .single-episode-audio,
 .single-episode-pdf {
@@ -1124,15 +1127,15 @@ input[type="checkbox"] {
 ::-webkit-scrollbar-thumb {
   background: #bfbfbf;
 }
- 
+
 
 /* Modal Content */
 
 
 .closemodalFeature {
-  position: fixed;
-  top: 16vh;
-  right: 6vw;
+  position: absolute;
+  top: -30px;
+  right: -30px;
 }
 
 .closemodalFeature:hover,
@@ -1141,6 +1144,67 @@ input[type="checkbox"] {
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
+#show {
+  position: fixed;
+  top: 30px;
+  left: 10px;
+}
+#show,
+#close {
+  background: #da1b60;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  padding: 1em;
+  width: 200px;
+}
+#show:hover,
+#close:hover {
+  background: #ff8a00;
+  cursor: pointer;
+}
+#dialog {
+  display: none;
+  position: fixed;
+  top: 20vh;
+  left: 10vw;
+  width: 80vw;
+  height: 60vh;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  background-color: white;
+}
+#dialog.show {
+  /* align-items: center; */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.volume-slider {
+  background: #e2e8cf;
+  height: 7px;
+  width: 85px;
+  position: absolute;
+  bottom: 45px;
+  display: none;
+}
+
+.volume-slider .volume-percentage {
+  background: #829d28;
+  height: 7px;
+  width: 50%;
+}
+.showvolumeslider{
+  display: block;
+}
+
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -1456,7 +1520,7 @@ input[type="checkbox"] {
   .overview {
     padding: 8% 10px !important;
   }
- 
+
 
   .scroller {
     padding-top: 30px;
@@ -1464,9 +1528,8 @@ input[type="checkbox"] {
 }
 
 
-<<<<<<< HEAD
 /*Feature and Episode Responsive*/
- 
+
 @media screen and (max-width: 480px){
   #episodes{
     padding: 45px 0;
@@ -1497,7 +1560,7 @@ input[type="checkbox"] {
    }
    .single-episode-audio{
 
-   } 
+   }
    .single-episode-pdf{
     text-align: center;
     padding-top: 15px;
@@ -1505,14 +1568,13 @@ input[type="checkbox"] {
    .mobileShow{
     display: block;
   }
-   
-}  
+
+}
 
 @media screen and (min-width: 768px){
-  
-}  
- 
-=======
+
+}
+
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   .quote-wrapper {
@@ -1521,4 +1583,3 @@ input[type="checkbox"] {
     width: 100%;
   }
 }
->>>>>>> 0d93435229cbb0ae988d5b42bffede91f0e21089

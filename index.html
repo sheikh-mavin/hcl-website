@@ -214,41 +214,42 @@
             </button>
           </div>
         </div>
-      </div> 
-  
-  
-  
+      </div>
+
+
+
         <div class="carousel-inner">
           <!-- Feature Season 1-->
           <div class="carousel-item active">
             <div class="season-card-container">
               <div class="container">
-                <div id="myFeatureModal"  
-                  class="feature-modal"> 
-                    <div class="feature-modal-content"> 
-                      <img class="closemodalFeature" src="./assets/images/feature/close.png" />
-                      <div class="row">
-                        <div id="feature-overview-vedio1" class="col-6" style="padding:0px 10px 0px">
-                          <iframe src="https://www.youtube.com/embed/SMM60nxM_zA" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen style="height: 50vh;width:100%;">
-                          </iframe>
-                        </div>
-                        <div id="feature-overview-vedio2" class="col-6" style="padding: 0px 10px 0px 8px;">
-                          <iframe src="https://www.youtube.com/embed/4K_WGSuuWcw" title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen style="height: 50vh;width:100%;">
-                          </iframe>
-                        </div>
+                <div id="myFeatureModal">
+                  <div id='dialog'>
+                    <img class="closemodalFeature" onclick="closeDialog();" src="./assets/images/feature/close.png" />
+                    <div style="display: flex;
+                    flex: 1;
+                    width: 100%;gap: 20px;">
+                      <div id="feature-overview-vedio1" style="flex: 1;">
+                        <iframe src="https://www.youtube.com/embed/SMM60nxM_zA" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen style="height: 100%;width:100%;">
+                      </iframe>
+                      </div>
+                      <div id="feature-overview-vedio2" style="flex: 1;">
+                        <iframe src="https://www.youtube.com/embed/4K_WGSuuWcw" title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen style="height: 100%;width:100%;">
+                        </iframe>
                       </div>
                     </div>
-                  </div> 
+                  </div>
+                </div>
 
                 <div class="row g-4" style="padding:30px 0">
-  
+
                   <div class="col-3">
                     <div class="card">
-                     
+
                       <div class="image-holder-feature">
                         <img
                           src="./assets/images/feature/ajay-bahl.png"
@@ -273,7 +274,7 @@
                             <img src="./assets/images/feature/linkedin-1.png" />
                           </a>
                         </div>
-                      </div> 
+                      </div>
 
                     <div class="card-body host-speaker">
                       <div class="speaker-type">SEASON HOST</div>
@@ -302,11 +303,11 @@
                         </div>
                         <div class="overlay-icons">
                           <a href="https://www.linkedin.com/in/gary-cantrell-2020" target="_blank" style="color: transparent;padding-right:12px"> <img src="./assets/images/feature/linkedin-1.png" />  </a>
-                          <a href="#" class="myFeatureBtn"><img src="./assets/images/feature/play-button.png" /></a>
-                        </div> 
-                       
+                          <a href="#" class="myFeatureBtn" onclick="showDialog('https://www.youtube.com/embed/SMM60nxM_zA','https://www.youtube.com/embed/4K_WGSuuWcw');"><img src="./assets/images/feature/play-button.png" /></a>
+                        </div>
+
                       </div>
-                    
+
                     <div class="card-body guest-speaker">
                       <div class="speaker-type">GUEST</div>
                       <div class="speaker-name">Gary Cantrell</div>
@@ -316,7 +317,7 @@
                     </div>
                   </div>
                   </div>
-              
+
 
                 <div class="col-3">
                   <div class="card">
@@ -344,15 +345,17 @@
                         >
                           <img src="./assets/images/feature/linkedin-1.png" />
                         </a>
+                        <a href="#" onclick="showDialog('https://www.youtube.com/embed/4K_WGSuuWcw','https://www.youtube.com/embed/SMM60nxM_zA');">
                         <img src="./assets/images/feature/play-button.png" />
+                        </a>
                       </div>
                     </div>
 
                     <div class="card-body guest-speaker">
                       <div class="speaker-type">GUEST</div>
-                      <div class="speaker-name">Gary Cantrell</div>
+                      <div class="speaker-name">Rhonda O. Gass</div>
                       <div class="speaker-role">
-                        Ex- Chief Information Officer & SVP Information Tech
+                        Vice President & COO at Stanley Black & Decker
                       </div>
                     </div>
                   </div>
@@ -383,7 +386,9 @@
                         >
                           <img src="./assets/images/feature/linkedin-1.png" />
                         </a>
+                        <a href="#" onclick="showDialog('https://www.youtube.com/embed/4K_WGSuuWcw','https://www.youtube.com/embed/SMM60nxM_zA');">
                         <img src="./assets/images/feature/play-button.png" />
+                        </a>
                       </div>
                     </div>
 
@@ -416,14 +421,14 @@
     </section>
 
     <!--  Episodes Section -->
-  <section id="episodes">
+   <section id="episodes">
     <div class="container">
-      <h2 class="title">Episodes</h2> 
-      <div class="container-fluid"> 
+      <h2 class="title">Episodes</h2>
+      <div class="container-fluid">
         <div class="row g-4">
           <div class="col-lg-8 p-0">
             <div class="card">
-              <div class="episode-vedio-wrapper"> 
+              <div class="episode-vedio-wrapper">
               <iframe class="single-episode-iframe" src="https://www.youtube.com/embed/SMM60nxM_zA"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -436,26 +441,39 @@
                 <div class="single-episode-title">#InspireTomorrow I Episode 1 I Part 1</div>
                 <div class="single-audiopdf-wrapper">
 
-                  <div class="single-episode-audio"> 
-                      <!-- <img src="./assets/images/episode/speaker-filled-audio-tool.png" style="width: 20px;height:20px;" /> 
+                  <div class="single-episode-audio">
+                      <!-- <img src="./assets/images/episode/speaker-filled-audio-tool.png" style="width: 20px;height:20px;" />
                     <span>Download Audio</span> -->
                    <div id="play-pause-audio" style="flex:1" onclick="toggleClass()"> <img src="./assets/images/episode/play-button.png" style="width: 28px;height: 28px;"/></div>
                    <div style="flex: 25;
                    margin-right: 30px;">
-                  
+
                   <audio id="speaker-audio"  src="./assets/audio/Ajay-Gary/HCL Ajay Gary Section 1 Audio.mp3" controls  style="display: none;"></audio>
                   <div class="progress_bar">
                     <div id="progressed"></div>
-                    <div style="    display: flex;
+                    <div style="display: flex;
                     justify-content: space-between;
                     padding-top: 2px;margin-top: 5px;">
                       <div id="audio-time-passed">0:00</div>
                       <div id="audio-time-total"></div>
                     </div>
                   </div>
-                
+
                 </div>
-                   <div id="mute-audio" style="flex: 1;text-align: right;" onclick="muteClass()"><img src="./assets/images/episode/speaker-filled-audio-tool.png"/></div>
+                <div class="volume-wrapper" style="flex: 1;text-align: right;">
+                  <div id="mute-audio"  onclick="muteClass()">
+
+                    <img src="./assets/images/episode/speaker-filled-audio-tool.png"/>
+                  </div>
+
+                  <div class="volume-slider">
+                    <div class="volume-percentage"></div>
+                  </div>
+
+
+                </div>
+
+
 
                       <!-- <div class="audio-player">
                       <div class="timeline">
@@ -464,7 +482,7 @@
                       <div class="controls">
                         <div class="play-container">
                           <div class="toggle-play play">
-                           
+
                         </div>
                         </div>
                         <div class="time">
@@ -472,13 +490,13 @@
                           <div class="divider">/</div>
                           <div class="length"></div>
                         </div>
-                        <div class="name">Music Song</div> 
+                        <div class="name">Music Song</div>
                         <div class="volume-container">
                           <div class="volume-button">
                             <div class="volume icono-volumeMedium"></div>
-                            
+
                           </div>
-                          
+
                           <div class="volume-slider">
                             <div class="volume-percentage"></div>
                           </div>
@@ -490,8 +508,8 @@
 
 
                   </div>
-                  <div class="single-episode-pdf">  
-                      <img src="./assets/images/episode/logotype.png" style="width: 20px;height:20px;" /> 
+                  <div class="single-episode-pdf">
+                      <img src="./assets/images/episode/logotype.png" style="width: 20px;height:20px;" />
                     <a href="./assets/pdf/Ajay-Gary/Mega Talks with Gary - Part 1.pdf" download>Download PDF</a>
                   </div>
                   <!-- <span class="single-episode-audio">
@@ -722,7 +740,7 @@
               <div class="mobileShow">
                 <div class="other-episodes">Other Episodes</div>
                 </div>
-              <div class="row"> 
+              <div class="row">
                 <div class="card p-0 multi-card active" style="margin-bottom: 20px;">
                   <span id="episode-link" style="display: none;">https://www.youtube.com/embed/SMM60nxM_zA</span>
                   <span id="audio-link" style="display: none;">./assets/audio/Ajay-Gary/HCL Ajay Gary Section 1 Audio.mp3</span>
@@ -739,7 +757,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card p-0 multi-card" style="margin-bottom: 20px;"> 
+                <div class="card p-0 multi-card" style="margin-bottom: 20px;">
                   <span id="episode-link" style="display: none;">https://www.youtube.com/embed/4K_WGSuuWcw</span>
                   <span id="audio-link" style="display: none;">./assets/audio/Ajay-Gary/HCL Ajay Gary Section 2 Audio.mp3</span>
                   <span id="pdf-link" style="display: none;">./assets/pdf/Ajay-Gary/Mega Talks with Gary - Part 2.pdf</span>
@@ -755,7 +773,7 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="card p-0 multi-card " style="margin-bottom: 20px;border: 0px;">
                   <span id="episode-link" style="display: none;">#</span>
                   <span id="audio-link" style="display: none;">#</span>
@@ -772,13 +790,13 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="card p-0 multi-card " style="margin-bottom: 20px;border: 0px;">
-  
+
                   <span id="episode-link" style="display: none;">#</span>
                   <span id="audio-link" style="display: none;">#</span>
                   <span id="pdf-link" style="display: none;">#</span>
-  
+
                   <div class="row g-0">
                     <div class="col-md-5">
                       <img src="./assets/images/episode/episode-side2.png"
@@ -792,13 +810,13 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="card p-0 multi-card " style="margin-bottom: 20px;border: 0px;">
-  
+
                   <span id="episode-link" style="display: none;">#</span>
                   <span id="audio-link" style="display: none;">#</span>
                   <span id="pdf-link" style="display: none;">#</span>
-  
+
                   <div class="row g-0">
                     <div class="col-md-5">
                       <img src="./assets/images/episode/screenshot-2022-07-28-at-10-30-36-am.png"
@@ -812,13 +830,13 @@
                     </div>
                   </div>
                 </div>
-  
+
                 <div class="card p-0 multi-card">
-  
+
                   <span id="episode-link" style="display: none;">#</span>
                   <span id="audio-link" style="display: none;">#</span>
                   <span id="pdf-link" style="display: none;">#</span>
-  
+
                   <div class="row g-0">
                     <div class="col-md-5">
                       <img src="./assets/images/episode/screenshot-2022-07-28-at-10-30-36-am.png"
@@ -832,17 +850,18 @@
                     </div>
                   </div>
                 </div>
-             
+
             </div>
-          </div> 
-          
- 
-         
+          </div>
+
+
+
       </div>
       </div>
       </div>
 
     </section>
+
     <!-- quotes -->
     <div id="quotes" class="quotes">
       <div class="q-l"></div>
@@ -968,7 +987,7 @@
         </div>
       </div>
     </div>
-    <!-- 
+    <!--
     <section id="contactus" class="contact">
       <div class="container-fluid g-0">
         <div class="contact-section-heading">Contact us</div>
@@ -1086,42 +1105,44 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script>
       // $('.carousel').carousel();
-      $(document).ready(function () { 
-        var modal = document.getElementById("myFeatureModal");
-        var btnModal = document.querySelector(".myFeatureBtn");
-        var imgC = document.getElementsByClassName("closemodalFeature")[0];
-        btnModal.onclick = function () {
-         
-          modal.style.display = "block"; 
-        }
-        imgC.onclick = function () {
-          modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-          if (event.target == modal) {
-            modal.style.display = "none";
-          }
-        }
- 
-        
+      const showDialog = (link1,link2) => {
+        var getFeatureOverLink1 = document.querySelector("#feature-overview-vedio1 iframe");
+        var getFeatureOverLink2 = document.querySelector("#feature-overview-vedio2 iframe");
+        getFeatureOverLink1.setAttribute("src", link1);
+        getFeatureOverLink2.setAttribute("src", link2);
 
-       
+        document.getElementById('dialog').classList.add('show')
+        const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+        const body = document.body;
+        body.style.position = 'fixed';
+        body.style.top = `-${scrollY}`;
+      };
+      const closeDialog = () => {
+        const body = document.body;
+        const scrollY = body.style.top;
+        body.style.position = '';
+        body.style.top = '';
+        window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        document.getElementById('dialog').classList.remove('show');
+      }
+      window.addEventListener('scroll', () => {
+        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+      });
+
+      $(document).ready(function () {
         $(".multi-card").click(function () {
-          
             var playPauseReset = document.getElementById("play-pause-audio").classList;
             playPauseReset.remove("playaudio")
             var getOriginalImg = document.querySelector("#play-pause-audio img");
             getOriginalImg.setAttribute("src","./assets/images/episode/play-button.png")
 
             var muteAudioReset = document.getElementById("mute-audio").classList;
-            muteAudioReset.remove("muted"); 
-            
+            muteAudioReset.remove("muted");
+
             var getmuteImg = document.querySelector("#mute-audio img");
             getmuteImg.setAttribute("src","./assets/images/episode/speaker-filled-audio-tool.png")
             var musicReset = document.getElementById("speaker-audio");
             musicReset.muted = false
- 
-
           $(".multi-card").removeClass("active");
           $(".multi-card").css("opacity",0.3);
         });
@@ -1142,7 +1163,7 @@
         $(".multi-card").click(function () {
           $(this).addClass("active");
           $(this).css("opacity",1);
-          
+
           var episodeDetails = document.querySelector(
             ".multi-card.active .multi-episode-details"
           );
@@ -1153,10 +1174,6 @@
             episodeDetails.innerText;
           document.querySelector(".single-episode-title").innerText =
             episodeTitle.innerText;
-
-
-
-
           var episodeLink = document.querySelector(
             ".multi-card.active #episode-link"
           );
@@ -1167,42 +1184,62 @@
           var pdfLink = document.querySelector(".multi-card.active #pdf-link");
           var getTargetPdfElement =  document.querySelector('.single-episode-pdf a');
           getTargetPdfElement.setAttribute("href",pdfLink.innerText) ;
-
-
           var audioLink = document.querySelector(
             ".multi-card.active #audio-link"
           );
           var getTargetAudioElement = document.querySelector('#speaker-audio');
-          getTargetAudioElement.setAttribute("src",audioLink.innerText) 
+          getTargetAudioElement.setAttribute("src",audioLink.innerText);
+        });
+      });
 
+      $(".volume-wrapper").hover(function() {
+        $('.volume-slider').addClass('showvolumeslider');
+      }, function() { });
 
-          
-        }); 
+      $(window).click(function(e) {
+        $('.volume-slider').removeClass('showvolumeslider');
       });
 
       //Audio Js
       var music = document.getElementById("speaker-audio");
+      music.volume = .5;
       var progressed = document.getElementById("progressed");
       var timepass = document.getElementById("audio-time-passed");
-      var audiotime = document.getElementById("audio-time-total");  
-      music.ontimeupdate = function(e){ 
+      var audiotime = document.getElementById("audio-time-total");
+      music.ontimeupdate = function(e){
         progressed.style.width = Math.floor(music.currentTime*100/music.duration)+"%";
         timepass.innerText = getTimeCodeFromNum(music.currentTime);
-        audiotime.innerText = getTimeCodeFromNum(music.duration) == "NaN:NaN:NaN"? "" : getTimeCodeFromNum(music.duration); 
+        audiotime.innerText = getTimeCodeFromNum(music.duration) == "NaN:NaN:NaN"? "" : getTimeCodeFromNum(music.duration);
       }
       var playPause = document.getElementById("play-pause-audio");
       var muteAudio = document.getElementById("mute-audio");
 
-      function toggleClass(){ 
-        playPause.classList.toggle("playaudio"); 
+      const progress_bar = document.querySelector(".progress_bar");
+      progress_bar.addEventListener("click", e => {
+        const progressbarWidth = window.getComputedStyle(progress_bar).width;
+        const timeToSeek = e.offsetX / parseInt(progressbarWidth) * music.duration;
+        music.currentTime = timeToSeek;
+      }, false);
+
+      const volumeSlider = document.querySelector(".volume-slider");
+      volumeSlider.addEventListener('click', e => {
+        const sliderWidth = window.getComputedStyle(volumeSlider).width;
+        const newVolume = e.offsetX / parseInt(sliderWidth);
+        music.volume = newVolume;
+        document.querySelector(".volume-percentage").style.width = newVolume * 100 + '%';
+      }, false)
+
+
+      function toggleClass(){
+        playPause.classList.toggle("playaudio");
         var getAllClass1 = document.getElementById("play-pause-audio").className;
         var getOriginalImg = document.querySelector("#play-pause-audio img");
         var getplayImg = document.querySelector(".playaudio img");
-        
+
         if(getAllClass1 == "playaudio"){
           music.play();
           getplayImg.setAttribute("src","./assets/images/episode/pause.svg")
-        
+
         }
         else{
           music.pause();
@@ -1210,26 +1247,26 @@
         }
       }
 
-      function muteClass(){ 
-        muteAudio.classList.toggle("muted"); 
-        var getAllClass2 = document.getElementById("mute-audio").className; 
+      function muteClass(){
+        muteAudio.classList.toggle("muted");
+        var getAllClass2 = document.getElementById("mute-audio").className;
         var getmuteImg = document.querySelector("#mute-audio img");
-        
+
         if(getAllClass2 == "muted"){
-          music.muted = true 
+          music.muted = true
           getmuteImg.setAttribute("src","./assets/images/episode/Mute.svg")
-          
+
         }
         else{
           music.muted = false
-         
+
           getmuteImg.setAttribute("src","./assets/images/episode/speaker-filled-audio-tool.png")
         }
       }
 
       function getTimeCodeFromNum(num) {
-        
-        
+
+
         let seconds = parseInt(num);
         let minutes = parseInt(seconds / 60);
         seconds -= minutes * 60;
@@ -1242,7 +1279,7 @@
         ).padStart(2, 0)}`;
       }
 
-         
+
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
