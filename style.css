@@ -607,10 +607,10 @@ input[type="checkbox"] {
 }
 
 #feature .card:hover {
-  /* transform: scale(1.08); */
+  transform: scale(1.08);
 
-  top: -10px;
-  margin-top: 0px;
+  /* top: -10px;
+  margin-top: 0px; */
 }
 #feature .card:hover .overlay {
   opacity: 1;
@@ -618,24 +618,19 @@ input[type="checkbox"] {
 }
 
 #feature .image-holder-feature{
-  height: 340px;
-  transition: height 1s;
-  
+  height: 340px;  
+  text-align: center;
+    background: #323236;
 }
 
-#feature .card:hover .image-holder-feature{
+/* #feature .card:hover .image-holder-feature{
   height: 370px;
 }
- 
-
-/* #feature .card:hover img{
-  height: 100%;
-} */
-
+  
 #feature .card:hover .card-img-top-featured-speaker{
   height: 100%;
   width: 100%;
-}
+} */
 
 .overlay {
   position: absolute;
@@ -643,10 +638,10 @@ input[type="checkbox"] {
   bottom: 0;
   left: 0;
   right: 0; 
-  height: 370px;
+  height: 340px;
   width: 100%;
   opacity: 0;
-  transition: all 1s; 
+  transition: all 2s; 
   background-color: #000;
 }
 
@@ -660,7 +655,7 @@ input[type="checkbox"] {
   letter-spacing: normal;
   text-align: center;
   color: #fff;
-  padding: 35px 20px 0px 20px;
+  padding: 75px 20px 0px 20px;
 }
 
 .overlay-icons {
@@ -729,7 +724,7 @@ input[type="checkbox"] {
   border-radius: 20px;
   background-color: #dee5c7;
   border: 0px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .feature-control-icons {
@@ -758,7 +753,7 @@ input[type="checkbox"] {
 
 #feature .title {
   padding-top: 0px;
-  font-family: "Poppins";
+  font-family: "Gotham-Bold";
   font-size: 36px;
   font-weight: bold;
   font-stretch: normal;
