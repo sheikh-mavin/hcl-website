@@ -95,6 +95,7 @@ img {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  cursor: pointer;
 }
 
 /* .text {
@@ -152,6 +153,7 @@ img {
   font-size: 40px;
   font-weight: bolder;
   font-family: Gotham-Bold;
+  margin-bottom: 0px !important;
 }
 .overview-image {
   width: 100%;
@@ -241,7 +243,7 @@ img {
 
 .quotes-section-heading {
   height: 45px;
-  margin-left: 300px;
+  margin-left: 250px;
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
@@ -312,7 +314,7 @@ img {
 
 .quote-wrapper {
   /* border: 1px solid black; */
-  padding: 37px 150px 0px 150px;
+  padding: 0px 150px 0px 150px;
 }
 .quotation-card-wrap {
   border: 1px solid black;
@@ -1327,7 +1329,7 @@ input[type="checkbox"] {
   }
 
   .insp {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 26px;
   }
 
@@ -1457,6 +1459,7 @@ input[type="checkbox"] {
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1070px) {
+
   .banner-text {
     margin-right: 10px;
   }
@@ -1527,7 +1530,16 @@ input[type="checkbox"] {
   }
 }
 
-
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  .quote-wrapper {
+    /* border: 1px solid black; */
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+  .quotes-section-heading {
+    margin-left: 90px;
+  }
+}
 /*Feature and Episode Responsive*/
 
 @media screen and (max-width: 480px){
