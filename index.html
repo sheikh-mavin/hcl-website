@@ -222,16 +222,19 @@
           <div class="carousel-item active">
             <div class="season-card-container">
               <div class="container">
-                <div class="row g-4" >
+                <div class="row g-4" style="padding:30px 0">
   
                   <div class="col-3">
                     <div class="card">
+                      <!-- <div class="image-holder-feature">
+                        <img src="./assets/images/feature/ajay-bahl.png" class="card-img-top-featured-speaker" alt="...">
+                      </div> -->
+                      <div>
                       <div class="image-holder-feature">
                         <img src="./assets/images/feature/ajay-bahl.png" class="card-img-top-featured-speaker" alt="...">
                       </div>
-                      
                       <div class="overlay">
-                        <div class="overlay-description">Ajay heads MEGA^LT(Manufacturing, Energy Utilities, Oil & Gas,
+                        <div class="overlay-description">Ajay heads MEGA^LT (Manufacturing, Energy Utilities, Oil & Gas,
                           Government, Aero and Defense, Logistics & Transportation, Travel and Hospitality) verticals for
                           North America. He is also a part of the Customer Advisory Board of HCL and has helped many F500
                           clients create Business Value. 
@@ -242,6 +245,8 @@
                           </a> 
                         </div>
                       </div>
+                      </div>
+
                        
                    
                     <div class="card-body host-speaker">
@@ -401,7 +406,7 @@
                 padding-top: 20px;align-items: center;">
 
                   <div class="single-episode-audio" style="display: flex;
-                  flex: 4;align-items: center;"> 
+                  flex: 6;align-items: center;"> 
                       <!-- <img src="./assets/images/episode/speaker-filled-audio-tool.png" style="width: 20px;height:20px;" /> 
                     <span>Download Audio</span> -->
                    <div id="play-pause-audio" style="flex:1" onclick="toggleClass()"> <img src="./assets/images/episode/play-button.png" style="width: 28px;height: 28px;"/></div>
@@ -493,7 +498,7 @@
                     </div>
                   </div>
                 </div>
-
+              </div>
               <div class="card p-0 multi-card" style="margin-bottom: 20px;"> 
                 <span id="episode-link" style="display: none;">https://www.youtube.com/embed/ZEi-sO0q5Uo</span>
                 <span id="audio-link" style="display: none;">https://www.youtube.com/embed/HLDdX03wxJ0</span>
@@ -590,7 +595,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+           
           </div>
         </div>
 
@@ -876,6 +881,19 @@
         $(".multi-card").click(function () {
           $(".multi-card").removeClass("active");
         });
+
+        $(".multi-card").hover(function(){
+          $(this).css("opacity", 1);
+          }, function(){ 
+            if($(this).hasClass('active')){
+              $(this).css("opacity",1);
+            }
+            else{
+              $(this).css("opacity",0.3);
+            }
+          
+        });
+
         $(".multi-card").click(function () {
           $(this).addClass("active");
           var episodeLink = document.querySelector(
