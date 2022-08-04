@@ -1620,7 +1620,7 @@ input[type="checkbox"] {
  }
 }
 
-@media only screen and (min-width: 1000px) and  (max-width: 1250px) {
+@media only screen and (min-width: 1000px) and  (max-width: 1350px) {
   .card-img-top-featured-speaker{
     height: auto !important;
   }
@@ -1636,6 +1636,9 @@ input[type="checkbox"] {
 .overlay .overlay-description {
   font-family: "Gotham-Medium";
   font-size: 10px;
+}
+#feature .speaker-role {
+  line-height: 19px;
 }
 }
 
