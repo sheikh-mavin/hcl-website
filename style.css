@@ -351,14 +351,15 @@ img {
 
 #customers-testimonials .name {
   font-family: Gotham-Bold;
-  margin: 5px 0 4px;
+  margin-top: 5px;
+  margin-bottom: 0px;
   font-size: 24px;
   font-weight: 600;
   color: #687d20;
 }
 
 #customers-testimonials .designation {
-  margin: 4px 34px 10px 33px;
+  margin: 0px 34px 12px 33px;
   font-family: Gotham;
   font-size: 14px;
   color: #7e7e7e;
