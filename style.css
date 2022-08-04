@@ -1489,45 +1489,7 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1070px) {
-
-  .banner-text {
-    margin-right: 10px;
-  }
-
-  .sl-image {
-    height: 450px;
-  }
-
-  .insp {
-    font-size: 48px;
-    line-height: 50px;
-  }
-
-  .colb {
-    margin-top: 20px;
-    font-size: 22px;
-    line-height: 26px;
-  }
-  .hash {
-    margin-top: 60px;
-    font-size: 18px;
-  }
-
-  .overview {
-    padding: 8% 10px !important;
-  }
-
-  .overview-text-wrapper {
-    padding: 14px;
-  }
-
-  .scroller {
-    padding-top: 10px;
-  }
-}
-
-@media screen and (min-width: 1070px) {
+@media screen and (min-width: 1024px) {
   .banner-text {
     margin-right: 10px;
   }
