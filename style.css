@@ -354,10 +354,6 @@ img {
   margin: 5px 0 4px;
   font-size: 24px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #687d20;
 }
 
@@ -365,11 +361,6 @@ img {
   margin: 4px 34px 10px 33px;
   font-family: Gotham;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #7e7e7e;
 }
 
@@ -1623,7 +1614,7 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (min-width: 2000px){
+/* @media screen and (min-width: 2000px){
 
 #customers-testimonials .name {
   margin: 24px 0 4px;
@@ -1633,7 +1624,7 @@ input[type="checkbox"] {
   margin: 24px 34px 10px 33px;
 }
 
-}
+} */
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
