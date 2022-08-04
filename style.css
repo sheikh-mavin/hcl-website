@@ -349,7 +349,7 @@ img {
   transition: all 0.3s ease-in-out;
   background-color: #f6f8f2;
   height: 350px;
-  padding: 50px;
+  padding: 22px;
   overflow: hidden;
 }
 
@@ -375,7 +375,7 @@ img {
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.72;
+  line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
   color: #242833;
