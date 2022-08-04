@@ -1312,6 +1312,11 @@
 
       });
 
+      $(".nav-link").click(function (e) {
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+        });
+
 
       $(document).ready(function () {
         window.setInterval(nextSlide, 4000);

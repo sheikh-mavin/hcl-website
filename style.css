@@ -152,6 +152,9 @@ img {
   max-width: 1180px;
 }
 
+.nav-link.active{
+  font-weight: bold;
+}
 
 .overview-text-wrapper {
   padding: 40px 18px 18px 10px;
