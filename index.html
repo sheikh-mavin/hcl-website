@@ -28,7 +28,7 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-meta navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-meta navbar-expand-lg navbar-light" style="background-color: white;">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <img
@@ -157,7 +157,7 @@
                 sharing the experiences to inspire the world that no matter how
                 hard yesterday hit us or how rough today is, the zest to build
                 better tomorrow always prevails. Together, we will have an
-                <b>#InspireTomorrow</b>.
+                <span class="inspireTomhash">#InspireTomorrow</span>.
               </p>
             </div>
           </div>
@@ -1114,9 +1114,14 @@
 
       });
 
+      $(".nav-link").click(function (e) {
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+        });
+
 
       $(document).ready(function () {
-        window.setInterval(nextSlide, 4000);
+        window.setInterval(nextSlide, 7000);
       });
       let slideIndex = 0;
       showSlides();
@@ -1137,7 +1142,7 @@
         }
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " sl-active";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
+        setTimeout(showSlides, 7000); // Change image every 2 seconds
       }
 
       function nextSlide() {
