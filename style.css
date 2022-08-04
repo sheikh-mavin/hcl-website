@@ -33,6 +33,10 @@
   box-shadow: none !important;
 }
 
+.navbar-expand-lg .navbar-nav {
+    margin-top: 16px;
+}
+
 .banner-1 {
   content: url("./assets/images/banner/banner-1.png");
 }
@@ -75,6 +79,10 @@ img {
 .inspire {
   font-family: Gotham-Bold;
   color: rgb(38 108 182);
+}
+
+.inspireTomhash {
+  font-family: Gotham-Bold;
 }
 
 .colb {
@@ -146,7 +154,7 @@ img {
 
 
 .overview-text-wrapper {
-  padding: 14px;
+  padding: 40px 9px 0px 10px;
 }
 
 .overview-heading {
@@ -154,7 +162,9 @@ img {
   font-weight: bolder;
   font-family: Gotham-Bold;
   margin-bottom: 0px !important;
+  line-height: 40px;
 }
+
 .overview-image {
   width: 100%;
   height: 112%;
@@ -337,7 +347,7 @@ img {
 }
 
 #customers-testimonials .name {
-  font-family: Rubik;
+  font-family: Gotham-Bold;
   margin: 5px 0 4px;
   font-size: 24px;
   font-weight: 600;
@@ -350,7 +360,7 @@ img {
 
 #customers-testimonials .designation {
   margin: 4px 34px 10px 33px;
-  font-family: Rubik;
+  font-family: Gotham;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -361,7 +371,7 @@ img {
 }
 
 #customers-testimonials .desc {
-  font-family: OpenSans;
+  font-family: Gotham;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -386,10 +396,10 @@ img {
 }
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
-  max-width: 90px;
+  max-width: 75px;
   margin: 0 auto 17px;
-  width: 72px;
-  height: 72px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
 }
 
