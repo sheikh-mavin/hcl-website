@@ -1617,12 +1617,15 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (min-width: 2080px) {
+@media only screen and (min-width: 2100) and  (max-width: 3500px) {
  #audio-time-passed{
   margin-top: 5px;
  }
  #feature .season-dropdown{
   line-height: 35px;
+ }
+ .single-episode-title{
+  padding-top: 15px;
  }
 }
 
