@@ -186,11 +186,11 @@ img {
 .overview-text {
   font-family: Gotham;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+
+
+
   line-height: 1.5;
-  letter-spacing: normal;
+
   color: #3d3d3d;
 }
 
@@ -260,10 +260,10 @@ img {
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.07;
-  letter-spacing: normal;
+
   color: #242833;
 }
 .flex-container-l {
@@ -359,6 +359,10 @@ img {
   margin-bottom: 0px;
   font-size: 24px;
   font-weight: 600;
+
+
+
+
   color: #687d20;
 }
 
@@ -366,17 +370,22 @@ img {
   margin: 0px 34px 12px 33px;
   font-family: Gotham;
   font-size: 14px;
+
+
+
+
+
   color: #7e7e7e;
 }
 
 #customers-testimonials .desc {
   font-family: Gotham;
   font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+
+
+
   line-height: 1.72;
-  letter-spacing: normal;
+
   text-align: center;
   color: #242833;
 }
@@ -453,10 +462,10 @@ img {
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.07;
-  letter-spacing: normal;
+
   color: #242833;
 }
 
@@ -612,10 +621,10 @@ input[type="checkbox"] {
   width: 100%;
   font-size: 36px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 45px;
-  letter-spacing: normal;
+
   color: #242833;
   padding: 60px 0px 100px 0px;
 }
@@ -657,10 +666,10 @@ input[type="checkbox"] {
   font-family: "Gotham-Medium";
   font-size: 16px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.25;
-  letter-spacing: normal;
+
   text-align: center;
   color: #fff;
   padding: 75px 20px 0px 20px;
@@ -691,8 +700,8 @@ input[type="checkbox"] {
   font-family: "Gotham";
   font-size: 14px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 16px;
   letter-spacing: 0.5px;
   color: #fff;
@@ -702,10 +711,10 @@ input[type="checkbox"] {
   font-family: "Gotham-Bold";
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 26px;
-  letter-spacing: normal;
+
   color: #fff;
   padding: 7px 0px;
 }
@@ -713,20 +722,20 @@ input[type="checkbox"] {
 #feature .speaker-role {
   font-family: "Gotham";
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+
+
+
   line-height: 15px;
-  letter-spacing: normal;
+
   color: #fff;
 }
 #feature .season-dropdown {
   font-family: "Gotham";
   font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
+
+
+
   color: #242833;
   border-radius: 20px;
   background-color: #dee5c7;
@@ -761,12 +770,12 @@ input[type="checkbox"] {
 #feature .title {
   padding-top: 0px;
   font-family: "Gotham-Bold";
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 36px;
-  letter-spacing: normal;
+
   color: #242833;
   margin-bottom: 0px;
 }
@@ -783,10 +792,10 @@ input[type="checkbox"] {
     font-family: "Gotham";
     font-size: 36px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 1.25;
-    letter-spacing: normal;
+
     color: #242833;
     padding:100px 0px;
   }
@@ -798,10 +807,10 @@ input[type="checkbox"] {
     font-family: "Gotham-Bold";
     font-size: 20px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 45px;
-    letter-spacing: normal;
+
     color: #242833;
     margin-top: -10px;
 
@@ -815,12 +824,12 @@ input[type="checkbox"] {
   #episodes .title{
 
     font-family: "Gotham-Bold";
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 36px;
-    letter-spacing: normal;
+
     color: #242833;
     margin-bottom: 0px;
     padding-bottom: 20px;
@@ -839,20 +848,20 @@ input[type="checkbox"] {
     font-family: "Gotham-Medium";
     font-size: 14px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 15px;
-    letter-spacing: normal;
+
     color: #687d20;
   }
   .single-episode-title{
     font-family: "Gotham-Bold";
     font-size: 24px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 25px;
-    letter-spacing: normal;
+
     color: #242833;
     padding-top: 10px;
   }
@@ -860,23 +869,23 @@ input[type="checkbox"] {
     font-family: "Gotham-Bold";
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+
+
+
+
     color: #000;
     display: flex;
                   flex: 6;align-items: center;
-                  gap:10px;
+                  gap:5px;
   }
   .single-episode-pdf{
     font-family: "Gotham-Bold";
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+
+
+
+
     color: #000;
     flex: 2;text-align:right;
   }
@@ -884,10 +893,10 @@ input[type="checkbox"] {
     font-family: "Gotham-Bold";
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
+
+
+
+
     color: #000;
     text-decoration: none;
   }
@@ -897,7 +906,7 @@ input[type="checkbox"] {
   width: 350px;
   background: #444;
   box-shadow: 0 0 20px 0 #000 a;
-  font-family: arial;
+  font-family: "Gotham";
   color: white;
   font-size: 0.75em;
   overflow: hidden;
@@ -907,7 +916,7 @@ input[type="checkbox"] {
 
 .progress_bar {
   height: 10px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   width: 100%;
   border-radius: 5px;
 
@@ -927,11 +936,11 @@ input[type="checkbox"] {
 #audio-time-total {
   font-family: Gotham;
   font-size: 12px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+
+
+
+
+
   color: #242833;
 }
 
@@ -961,8 +970,8 @@ input[type="checkbox"] {
     font-family: "Gotham-Medium";
     font-size: 14px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 1.21;
     letter-spacing: -0.2px;
     color: #687d20;
@@ -971,10 +980,10 @@ input[type="checkbox"] {
     font-family: "Gotham-Bold";
     font-size: 20px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 1.25;
-    letter-spacing: normal;
+
     color: #242833;
     margin-top: 5px;
 
@@ -983,8 +992,8 @@ input[type="checkbox"] {
     font-family: "Gotham";
     font-size: 14px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
+
+
     line-height: 1.21;
     letter-spacing: -0.2px;
     color: #7e7e7e;
@@ -1038,12 +1047,12 @@ input[type="checkbox"] {
 .episodes .title {
   padding-top: 10vh;
   font-family: "Gotham-Bold";
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.25;
-  letter-spacing: normal;
+
   color: #242833;
   margin-bottom: 0px;
   padding-bottom: 30px;
@@ -1061,20 +1070,20 @@ input[type="checkbox"] {
   font-family: "Gotham-Medium";
   font-size: 14px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+
+
+
+
   color: #687d20;
 }
 .single-episode-title {
   font-family: "Gotham-Bold";
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.04;
-  letter-spacing: normal;
+
   color: #242833;
   padding-top: 10px;
 }
@@ -1083,10 +1092,10 @@ input[type="checkbox"] {
   font-family: "Gotham-Bold";
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+
+
+
+
   color: #000;
 }
 .single-episode-audio a,
@@ -1094,10 +1103,10 @@ input[type="checkbox"] {
   font-family: "Gotham-Bold";
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
+
+
+
+
   color: #000;
   text-decoration: none;
 }
@@ -1105,8 +1114,8 @@ input[type="checkbox"] {
   font-family: "Gotham-Medium";
   font-size: 14px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.21;
   letter-spacing: -0.2px;
   color: #687d20;
@@ -1115,18 +1124,18 @@ input[type="checkbox"] {
   font-family: "Gotham-Bold";
   font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.25;
-  letter-spacing: normal;
+
   color: #242833;
 }
 .multi-episode-date {
   font-family: "Gotham";
   font-size: 14px;
   font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
+
+
   line-height: 1.21;
   letter-spacing: -0.2px;
   color: #7e7e7e;
@@ -1621,6 +1630,24 @@ input[type="checkbox"] {
  }
 }
 
+@media only screen and (min-width: 1000px) and  (max-width: 1250px) {
+  .card-img-top-featured-speaker{
+    height: auto !important;
+  }
+  .image-holder-feature{
+    height: auto !important;
+  }
+  #feature .card-body {
+    min-height: 142px;
+}
+.overlay{
+  height: 242px !important;
+}
+.overlay .overlay-description {
+  font-family: "Gotham-Medium";
+  font-size: 10px;
+}
+}
 
 
 .modal {
@@ -1662,3 +1689,9 @@ input[type="checkbox"] {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* @media (min-width: 992px){
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 95vw !important;
+}
+} */
