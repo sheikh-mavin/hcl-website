@@ -180,7 +180,7 @@
   <div class="modal-content">
     <!-- <span>&times;</span> -->
     <div>
-    <img class="closemodalFeature" onclick="closeDialog();" src="./assets/images/feature/close.png"  alt="Close-Feature-Modal"/>
+    <img class="closemodalFeature" onclick="closeDialog();" src="./assets/images/feature/close.svg"  alt="Close-Feature-Modal"/>
     <div style="display: flex;
     flex: 1;
     width: 100%;gap: 20px;height: 340px;">
@@ -478,8 +478,7 @@
                   <div class="single-episode-audio">
 
                    <div id="play-pause-audio" style="flex:1" onclick="toggleClass()"> <img src="./assets/images/episode/play-button.png" alt="play-icon" style="width: 28px;height: 28px;"/></div>
-                   <div style="flex: 25;
-                   margin-right: 30px;">
+                   <div style="flex: 25;">
 
                   <audio id="speaker-audio"  src="./assets/audio/Ajay-Gary/HCL-Ajay-Gary-Section-1-Audio.mp3" controls  style="display: none;"></audio>
                   <div class="progress_bar">
@@ -945,27 +944,16 @@
         getFeatureOverLink2.setAttribute("src", link2);
         var modal = document.getElementById("myModal");
         modal.style.display = "block";
-        // document.getElementById('dialog').classList.add('show')
         const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
         const body = document.body;
         body.style.position = 'fixed';
         body.style.top = `-${scrollY}`;
-console.log("SHOW DIALOG----------------")
-        // var modal = document.getElementById("myModal");
-// var btn = document.getElementById("myBtn");
-// var span = document.getElementsByClassName("closemodalFeature")[0];
-// btn.onclick = function() {
-  // modal.style.display = "block";
-// }
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
 
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
       };
       const closeDialog = () => {
@@ -974,7 +962,6 @@ console.log("SHOW DIALOG----------------")
         body.style.position = '';
         body.style.top = '';
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
-        // document.getElementById('dialog').classList.remove('show');
         var modal = document.getElementById("myModal");
         var span = document.getElementsByClassName("closemodalFeature")[0];
 
