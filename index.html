@@ -28,7 +28,7 @@
     />
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-meta navbar-expand-lg navbar-light" style="background-color: white;">
+    <nav class="navbar sticky-top navbar-meta navbar-expand-lg navbar-light" style="background-color: white;   box-shadow: 0 2px 15px 0 rgba(148, 141, 141, 0.5);">
       <div class="container-fluid">
         <a href="#" class="navbar-brand">
           <img
@@ -73,14 +73,14 @@
     <!-- Banner -->
     <div id="home" class="corosoul">
       <div class="sl-container">
-        <div class="sl sl-fade" ref="ban-1">
+        <div class="sl sl-fade" data-ref="ban-1">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-1" />
         </div>
 
-        <div class="sl sl-fade" ref="ban-2">
+        <div class="sl sl-fade" data-ref="ban-2">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-2" />
         </div>
-        <div class="sl sl-fade" ref="ban-3">
+        <div class="sl sl-fade" data-ref="ban-3">
           <img style="width: 100%" alt="" src="#" class="sl-image banner-3" />
         </div>
         <div class="banner-text">
@@ -676,7 +676,7 @@
             </div>
             <div class="col-lg-10 col-md-12">
               <div class="quotation">
-                <section class="testimonials">
+                <div class="testimonials">
                   <!-- https://codepen.io/shamim539/details/GZPZBp -->
                   <div class="row">
                     <div class="col-sm-12">
@@ -769,7 +769,7 @@
                       </div>
                     </div>
                   </div>
-                </section>
+                </div>
                 <!-- END OF TESTIMONIALS -->
               </div>
             </div>
@@ -1159,7 +1159,7 @@ console.log("SHOW DIALOG----------------")
         let slides = document.getElementsByClassName("sl");
         let dots = document.getElementsByClassName("dot");
 
-        const ss = document.querySelector(`div[ref='${e.target.id}']`);
+        const ss = document.querySelector(`div[data-ref='${e.target.id}']`);
         let sd = document.getElementById(event.target.id);
 
         for (i = 0; i < slides.length; i++) {

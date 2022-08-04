@@ -1622,7 +1622,15 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 2000px){
+
+#customers-testimonials .name {
+  margin: 24px 0 4px;
+}
+
+#customers-testimonials .designation {
+  margin: 24px 34px 10px 33px;
+}
 
 }
 
