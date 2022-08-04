@@ -287,6 +287,8 @@ img {
   background-size: auto;
   height: 46px;
   width: 46px;
+  margin-right: 10px;
+
 }
 
 .q-l {
@@ -323,6 +325,8 @@ img {
   height: 46px;
   width: 46px;
   float: right;
+  margin-left: 10px;
+
 }
 
 .quote-wrapper {
@@ -338,8 +342,8 @@ img {
 #customers-testimonials .item {
   text-align: center;
 
-  -webkit-transform: scale3d(0.9, 0.9, 1);
-  transform: scale3d(0.9, 0.9, 1);
+  -webkit-transform: scale3d(1, 0.9, 1);
+  transform: scale3d(1, 0.9, 1);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -351,7 +355,8 @@ img {
 
 #customers-testimonials .name {
   font-family: Gotham-Bold;
-  margin: 5px 0 4px;
+  margin-top: 5px;
+  margin-bottom: 0px;
   font-size: 24px;
   font-weight: 600;
 
@@ -362,7 +367,7 @@ img {
 }
 
 #customers-testimonials .designation {
-  margin: 4px 34px 10px 33px;
+  margin: 0px 34px 12px 33px;
   font-family: Gotham;
   font-size: 14px;
 
@@ -400,10 +405,21 @@ img {
 .owl-carousel .owl-item img {
   transform-style: preserve-3d;
   max-width: 75px;
-  margin: 0 auto 17px;
+  margin: 0 auto 12px;
   width: 75px;
   height: 75px;
   border-radius: 50%;
+}
+
+#customers-testimonials .owl-item .item .rp {
+  height: 270px;
+  overflow: hidden;
+}
+
+
+
+#customers-testimonials .owl-item.active.center .item .rp {
+  height: 100%;
 }
 
 #customers-testimonials.owl-carousel .owl-dots {
@@ -1497,66 +1513,28 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1070px) {
-
+@media screen and (min-width: 1024px) {
   .banner-text {
     margin-right: 10px;
   }
 
   .sl-image {
-    height: 450px;
+    height: 650px;
   }
 
   .insp {
-    font-size: 48px;
-    line-height: 50px;
-  }
-
-  .colb {
-    margin-top: 20px;
-    font-size: 22px;
-    line-height: 26px;
-  }
-  .hash {
-    margin-top: 60px;
-    font-size: 18px;
-  }
-
-  .overview {
-    padding: 8% 10px !important;
-  }
-
-  .overview-text-wrapper {
-    padding: 14px;
-  }
-
-  .scroller {
-    padding-top: 10px;
-  }
-}
-
-@media screen and (min-width: 1070px) {
-  .banner-text {
-    margin-right: 10px;
-  }
-
-  .sl-image {
-    height: 700px;
-  }
-
-  .insp {
-    font-size: 72px;
+    font-size: 77px;
     line-height: 74px;
   }
 
   .colb {
     margin-top: 30px;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 38px;
   }
   .hash {
-    margin-top: 110px;
-    font-size: 32px;
+    margin-top: 80px;
+    font-size: 38px;
   }
 
   .overview {
@@ -1622,7 +1600,7 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (min-width: 2000px){
+/* @media screen and (min-width: 2000px){
 
 #customers-testimonials .name {
   margin: 24px 0 4px;
@@ -1632,7 +1610,7 @@ input[type="checkbox"] {
   margin: 24px 34px 10px 33px;
 }
 
-}
+} */
 
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
