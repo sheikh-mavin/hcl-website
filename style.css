@@ -1642,6 +1642,12 @@ input[type="checkbox"] {
 }
 }
 
+@media only screen and (min-width: 1251px) and (max-width: 1349px){
+.overlay {
+    height: 294px !important;
+}
+}
+
 
 .modal {
   display: none; /* Hidden by default */
