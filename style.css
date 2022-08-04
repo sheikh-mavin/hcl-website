@@ -1495,22 +1495,22 @@ input[type="checkbox"] {
   }
 
   .sl-image {
-    height: 700px;
+    height: 650px;
   }
 
   .insp {
-    font-size: 72px;
+    font-size: 77px;
     line-height: 74px;
   }
 
   .colb {
     margin-top: 30px;
-    font-size: 32px;
+    font-size: 38px;
     line-height: 38px;
   }
   .hash {
-    margin-top: 110px;
-    font-size: 32px;
+    margin-top: 80px;
+    font-size: 38px;
   }
 
   .overview {
