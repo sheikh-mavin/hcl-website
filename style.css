@@ -256,7 +256,7 @@ img {
 
 .quotes-section-heading {
   height: 45px;
-  margin-left: 250px;
+  margin-left: 80px;
   font-family: Gotham-Bold;
   font-size: 40px;
   font-weight: bold;
@@ -359,10 +359,6 @@ img {
   margin-bottom: 0px;
   font-size: 24px;
   font-weight: 600;
-
-
-
-
   color: #687d20;
 }
 
@@ -370,11 +366,6 @@ img {
   margin: 0px 34px 12px 33px;
   font-family: Gotham;
   font-size: 14px;
-
-
-
-
-
   color: #7e7e7e;
 }
 
