@@ -348,8 +348,8 @@ img {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #f6f8f2;
-  height: 350px;
-  padding: 50px;
+  height: 310px;
+  padding: 22px;
   overflow: hidden;
 }
 
@@ -381,11 +381,7 @@ img {
 #customers-testimonials .desc {
   font-family: Gotham;
   font-size: 18px;
-
-
-
-  line-height: 1.72;
-
+  line-height: 1.5;
   text-align: center;
   color: #242833;
 }
