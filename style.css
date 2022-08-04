@@ -754,7 +754,7 @@ input[type="checkbox"] {
 #feature .title {
   padding-top: 0px;
   font-family: "Gotham-Bold";
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -808,7 +808,7 @@ input[type="checkbox"] {
   #episodes .title{
 
     font-family: "Gotham-Bold";
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1031,7 +1031,7 @@ input[type="checkbox"] {
 .episodes .title {
   padding-top: 10vh;
   font-family: "Gotham-Bold";
-  font-size: 36px;
+  font-size: 40px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
